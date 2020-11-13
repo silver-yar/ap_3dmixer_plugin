@@ -2,7 +2,7 @@
 
 <JUCERPROJECT id="w7mKCg" name="ap_3dmixer_client" projectType="audioplug"
               useAppConfig="0" addUsingNamespaceToJuceHeader="0" displaySplashScreen="1"
-              jucerFormatVersion="1">
+              jucerFormatVersion="1" headerPath="../external/protobuf/src">
   <MAINGROUP id="aJ1pxM" name="ap_3dmixer_client">
     <GROUP id="{744D627B-6D9A-349F-B2A6-C1AEC800DE12}" name="Source">
       <FILE id="O9xUez" name="parameters.pb.cc" compile="1" resource="0"
@@ -25,7 +25,7 @@
   </MAINGROUP>
   <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
   <EXPORTFORMATS>
-    <CLION targetFolder="Builds/CLion">
+    <CLION targetFolder="Builds/CLion" clionXcodeEnabled="1">
       <MODULEPATHS>
         <MODULEPATH id="juce_audio_basics" path="../../sdk/JUCE_old/modules"/>
         <MODULEPATH id="juce_audio_devices" path="../../sdk/JUCE_old/modules"/>
@@ -41,7 +41,8 @@
         <MODULEPATH id="juce_gui_extra" path="../../sdk/JUCE_old/modules"/>
       </MODULEPATHS>
     </CLION>
-    <XCODE_MAC targetFolder="Builds/MacOSX">
+    <XCODE_MAC targetFolder="Builds/MacOSX" extraCompilerFlags="-I/Users/silveryar/development/ap_3dmixer_plugin/external/protobuf/src"
+               extraLinkerFlags="-L/Users/silveryar/development/ap_3dmixer_plugin/external/protobuf/src&#10;">
       <CONFIGURATIONS>
         <CONFIGURATION isDebug="1" name="Debug" targetName="ap_3dmixer_client"/>
         <CONFIGURATION isDebug="0" name="Release" targetName="ap_3dmixer_client"/>
