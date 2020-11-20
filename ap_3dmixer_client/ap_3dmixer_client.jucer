@@ -2,14 +2,15 @@
 
 <JUCERPROJECT id="w7mKCg" name="ap_3dmixer_client" projectType="audioplug"
               useAppConfig="0" addUsingNamespaceToJuceHeader="0" displaySplashScreen="1"
-              jucerFormatVersion="1" headerPath="../external/protobuf/src">
+              jucerFormatVersion="1" headerPath="Users/silveryar/development/ap_3dmixer_plugin/external/protobuf/src"
+              cppLanguageStandard="17">
   <MAINGROUP id="aJ1pxM" name="ap_3dmixer_client">
     <GROUP id="{744D627B-6D9A-349F-B2A6-C1AEC800DE12}" name="Source">
-      <FILE id="O9xUez" name="parameters.pb.cc" compile="1" resource="0"
-            file="Source/parameters.pb.cc"/>
-      <FILE id="IGT87n" name="parameters.pb.h" compile="0" resource="0" file="Source/parameters.pb.h"/>
-      <FILE id="wfKr1D" name="parameters.proto" compile="0" resource="1"
+      <FILE id="wfKr1D" name="parameters.proto" compile="0" resource="0"
             file="Source/parameters.proto"/>
+      <FILE id="ln13qj" name="parameters.pb.cc" compile="1" resource="0"
+            file="Source/parameters.pb.cc"/>
+      <FILE id="CWbtA3" name="parameters.pb.h" compile="0" resource="0" file="Source/parameters.pb.h"/>
       <FILE id="rxPUBE" name="APInterprocessConnection.cpp" compile="1" resource="0"
             file="Source/APInterprocessConnection.cpp"/>
       <FILE id="ZT5xzJ" name="APInterprocessConnection.h" compile="0" resource="0"
