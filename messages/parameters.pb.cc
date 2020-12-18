@@ -71,8 +71,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_parameters_2eproto::offsets[] 
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::aproto::Parameters, parameter1_),
-  PROTOBUF_FIELD_OFFSET(::aproto::Parameters, parameter2_),
+  PROTOBUF_FIELD_OFFSET(::aproto::Parameters, parameters_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::aproto::Parameter)},
@@ -86,10 +85,9 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
 
 const char descriptor_table_protodef_parameters_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n\020parameters.proto\022\006aproto\"(\n\tParameter\022"
-  "\014\n\004name\030\001 \001(\t\022\r\n\005value\030\002 \001(\002\"Z\n\nParamete"
-  "rs\022%\n\nparameter1\030\001 \001(\0132\021.aproto.Paramete"
-  "r\022%\n\nparameter2\030\002 \001(\0132\021.aproto.Parameter"
-  "b\006proto3"
+  "\014\n\004name\030\001 \001(\t\022\r\n\005value\030\002 \001(\002\"3\n\nParamete"
+  "rs\022%\n\nparameters\030\001 \003(\0132\021.aproto.Paramete"
+  "rb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_parameters_2eproto_deps[1] = {
 };
@@ -99,7 +97,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_par
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_parameters_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_parameters_2eproto = {
-  false, false, descriptor_table_protodef_parameters_2eproto, "parameters.proto", 168,
+  false, false, descriptor_table_protodef_parameters_2eproto, "parameters.proto", 129,
   &descriptor_table_parameters_2eproto_once, descriptor_table_parameters_2eproto_sccs, descriptor_table_parameters_2eproto_deps, 2, 0,
   schemas, file_default_instances, TableStruct_parameters_2eproto::offsets,
   file_level_metadata_parameters_2eproto, 2, file_level_enum_descriptors_parameters_2eproto, file_level_service_descriptors_parameters_2eproto,
@@ -346,52 +344,27 @@ void Parameter::InternalSwap(Parameter* other) {
 // ===================================================================
 
 void Parameters::InitAsDefaultInstance() {
-  ::aproto::_Parameters_default_instance_._instance.get_mutable()->parameter1_ = const_cast< ::aproto::Parameter*>(
-      ::aproto::Parameter::internal_default_instance());
-  ::aproto::_Parameters_default_instance_._instance.get_mutable()->parameter2_ = const_cast< ::aproto::Parameter*>(
-      ::aproto::Parameter::internal_default_instance());
 }
 class Parameters::_Internal {
  public:
-  static const ::aproto::Parameter& parameter1(const Parameters* msg);
-  static const ::aproto::Parameter& parameter2(const Parameters* msg);
 };
 
-const ::aproto::Parameter&
-Parameters::_Internal::parameter1(const Parameters* msg) {
-  return *msg->parameter1_;
-}
-const ::aproto::Parameter&
-Parameters::_Internal::parameter2(const Parameters* msg) {
-  return *msg->parameter2_;
-}
 Parameters::Parameters(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  parameters_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:aproto.Parameters)
 }
 Parameters::Parameters(const Parameters& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      parameters_(from.parameters_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  if (from._internal_has_parameter1()) {
-    parameter1_ = new ::aproto::Parameter(*from.parameter1_);
-  } else {
-    parameter1_ = nullptr;
-  }
-  if (from._internal_has_parameter2()) {
-    parameter2_ = new ::aproto::Parameter(*from.parameter2_);
-  } else {
-    parameter2_ = nullptr;
-  }
   // @@protoc_insertion_point(copy_constructor:aproto.Parameters)
 }
 
 void Parameters::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Parameters_parameters_2eproto.base);
-  ::memset(&parameter1_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&parameter2_) -
-      reinterpret_cast<char*>(&parameter1_)) + sizeof(parameter2_));
 }
 
 Parameters::~Parameters() {
@@ -402,8 +375,6 @@ Parameters::~Parameters() {
 
 void Parameters::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
-  if (this != internal_default_instance()) delete parameter1_;
-  if (this != internal_default_instance()) delete parameter2_;
 }
 
 void Parameters::ArenaDtor(void* object) {
@@ -427,14 +398,7 @@ void Parameters::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && parameter1_ != nullptr) {
-    delete parameter1_;
-  }
-  parameter1_ = nullptr;
-  if (GetArena() == nullptr && parameter2_ != nullptr) {
-    delete parameter2_;
-  }
-  parameter2_ = nullptr;
+  parameters_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -446,18 +410,16 @@ const char* Parameters::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // .aproto.Parameter parameter1 = 1;
+      // repeated .aproto.Parameter parameters = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ctx->ParseMessage(_internal_mutable_parameter1(), ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // .aproto.Parameter parameter2 = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ctx->ParseMessage(_internal_mutable_parameter2(), ptr);
-          CHK_(ptr);
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_parameters(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -488,20 +450,12 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .aproto.Parameter parameter1 = 1;
-  if (this->has_parameter1()) {
+  // repeated .aproto.Parameter parameters = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_parameters_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::parameter1(this), target, stream);
-  }
-
-  // .aproto.Parameter parameter2 = 2;
-  if (this->has_parameter2()) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::parameter2(this), target, stream);
+      InternalWriteMessage(1, this->_internal_parameters(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -520,18 +474,11 @@ size_t Parameters::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .aproto.Parameter parameter1 = 1;
-  if (this->has_parameter1()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *parameter1_);
-  }
-
-  // .aproto.Parameter parameter2 = 2;
-  if (this->has_parameter2()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *parameter2_);
+  // repeated .aproto.Parameter parameters = 1;
+  total_size += 1UL * this->_internal_parameters_size();
+  for (const auto& msg : this->parameters_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -565,12 +512,7 @@ void Parameters::MergeFrom(const Parameters& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_parameter1()) {
-    _internal_mutable_parameter1()->::aproto::Parameter::MergeFrom(from._internal_parameter1());
-  }
-  if (from.has_parameter2()) {
-    _internal_mutable_parameter2()->::aproto::Parameter::MergeFrom(from._internal_parameter2());
-  }
+  parameters_.MergeFrom(from.parameters_);
 }
 
 void Parameters::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -594,12 +536,7 @@ bool Parameters::IsInitialized() const {
 void Parameters::InternalSwap(Parameters* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Parameters, parameter2_)
-      + sizeof(Parameters::parameter2_)
-      - PROTOBUF_FIELD_OFFSET(Parameters, parameter1_)>(
-          reinterpret_cast<char*>(&parameter1_),
-          reinterpret_cast<char*>(&other->parameter1_));
+  parameters_.InternalSwap(&other->parameters_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Parameters::GetMetadata() const {

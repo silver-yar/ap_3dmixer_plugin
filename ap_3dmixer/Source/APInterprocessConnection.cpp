@@ -26,6 +26,8 @@ void Ap_InterprocessConnection::messageReceived (const juce::MemoryBlock& messag
     aproto::Parameters converted;
     std::string s(message.begin(), message.getSize());
     converted.ParseFromString(s);
-    DBG(converted.parameter1().name());
-    DBG(converted.parameter2().name());
+    DBG(converted.parameters(0).name());
+    DBG(converted.parameters(1).name());
+    DBG(converted.parameters(0).value());
+    DBG(converted.parameters(1).value());
 }

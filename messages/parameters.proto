@@ -10,7 +10,5 @@ message Parameter {
 }
 
 message Parameters {
-    //repeated Parameter parameters = 1;
-    Parameter parameter1 = 1;
-    Parameter parameter2 = 2;
+    repeated Parameter parameters = 1;
 }

@@ -258,11 +258,11 @@ void Ap_3dmixer_clientAudioProcessor::valueTreePropertyChanged (juce::ValueTree&
     mustUpdateProcessing_ = true;
     aproto::Parameters parameters;
 
-    aproto::Parameter* lpf = parameters.mutable_parameter1();
+    aproto::Parameter* lpf = parameters.add_parameters();
     lpf->set_name("LPF");
     lpf->set_value(apvts.getRawParameterValue("LPF") -> load());
     
-    aproto::Parameter* volume = parameters.mutable_parameter2();
+    aproto::Parameter* volume = parameters.add_parameters();
     volume->set_name("VOL");
     volume->set_value(apvts.getRawParameterValue("VOL") -> load());
 
