@@ -169,6 +169,9 @@ set_source_files_properties ("../../../../../../sdk/JUCE_old/modules/juce_audio_
 set_source_files_properties ("../../../../../../sdk/JUCE_old/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 
 add_library (SHARED_CODE STATIC
+    "../../../messages/parameters.pb.cc"
+    "../../../messages/parameters.pb.h"
+    "../../../messages/parameters.proto"
     "../../../external/protobuf/src/google/protobuf/any_lite.cc"
     "../../../external/protobuf/src/google/protobuf/any.cc"
     "../../../external/protobuf/src/google/protobuf/any.pb.cc"
@@ -245,8 +248,6 @@ add_library (SHARED_CODE STATIC
     "../../../external/protobuf/src/google/protobuf/stubs/strutil.cc"
     "../../../external/protobuf/src/google/protobuf/stubs/substitute.cc"
     "../../../external/protobuf/src/google/protobuf/stubs/time.cc"
-    "../../Source/parameters.pb.cc"
-    "../../Source/parameters.pb.h"
     "../../Source/APInterprocessConnection.cpp"
     "../../Source/APInterprocessConnection.h"
     "../../Source/PluginProcessor.cpp"
@@ -1693,6 +1694,8 @@ add_library (SHARED_CODE STATIC
     "../../../../../../sdk/JUCE_old/modules/juce_opengl/juce_opengl.cpp"
     "../../../../../../sdk/JUCE_old/modules/juce_opengl/juce_opengl.mm"
     "../../../../../../sdk/JUCE_old/modules/juce_opengl/juce_opengl.h"
+    "../../JuceLibraryCode/BinaryData.cpp"
+    "../../JuceLibraryCode/BinaryData.h"
     "../../JuceLibraryCode/include_juce_audio_basics.mm"
     "../../JuceLibraryCode/include_juce_audio_devices.mm"
     "../../JuceLibraryCode/include_juce_audio_formats.mm"
@@ -1711,8 +1714,9 @@ add_library (SHARED_CODE STATIC
     "../../JuceLibraryCode/JucePluginDefines.h"
 )
 
+set_source_files_properties ("../../../messages/parameters.pb.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../messages/parameters.proto" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../external/protobuf/src/google/protobuf/stubs/stringpiece.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../Source/parameters.pb.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../Source/APInterprocessConnection.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../Source/PluginProcessor.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../Source/PluginEditor.h" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -3156,6 +3160,7 @@ set_source_files_properties ("../../../../../../sdk/JUCE_old/modules/juce_opengl
 set_source_files_properties ("../../../../../../sdk/JUCE_old/modules/juce_opengl/juce_opengl.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../../../../sdk/JUCE_old/modules/juce_opengl/juce_opengl.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../../../../sdk/JUCE_old/modules/juce_opengl/juce_opengl.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/BinaryData.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../JuceLibraryCode/JuceHeader.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../JuceLibraryCode/JucePluginDefines.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 
@@ -3179,6 +3184,7 @@ target_include_directories (VST3 PRIVATE
     "../../JuceLibraryCode"
     "/Users/silveryar/sdk/JUCE_old/modules"
     "../../../external/protobuf/src"
+    "../../../messages"
     "/Users/silveryar/sdk/JUCE_old/modules/juce_audio_plugin_client"
 )
 
@@ -3324,6 +3330,7 @@ target_include_directories (AU PRIVATE
     "../../JuceLibraryCode"
     "/Users/silveryar/sdk/JUCE_old/modules"
     "../../../external/protobuf/src"
+    "../../../messages"
     "/Users/silveryar/sdk/JUCE_old/modules/juce_audio_plugin_client"
 )
 
@@ -3429,6 +3436,7 @@ if (RC_COMPILER)
         -I "${PROJECT_SOURCE_DIR}/../../JuceLibraryCode"
         -I "/Users/silveryar/sdk/JUCE_old/modules"
         -I "${PROJECT_SOURCE_DIR}/../../../external/protobuf/src"
+        -I "${PROJECT_SOURCE_DIR}/../../../messages"
         -I "/Users/silveryar/sdk/JUCE_old/modules/juce_audio_plugin_client"
         ${AU_REZ_SOURCES}
         -o ${AU_REZ_OUTPUT}
@@ -3497,6 +3505,7 @@ target_include_directories (STANDALONE_PLUGIN PRIVATE
     "../../JuceLibraryCode"
     "/Users/silveryar/sdk/JUCE_old/modules"
     "../../../external/protobuf/src"
+    "../../../messages"
     "/Users/silveryar/sdk/JUCE_old/modules/juce_audio_plugin_client"
 )
 
@@ -3628,6 +3637,7 @@ target_include_directories (SHARED_CODE PRIVATE
     "../../JuceLibraryCode"
     "/Users/silveryar/sdk/JUCE_old/modules"
     "../../../external/protobuf/src"
+    "../../../messages"
     "/Users/silveryar/sdk/JUCE_old/modules/juce_audio_plugin_client"
 )
 
@@ -3769,6 +3779,7 @@ target_include_directories (VST3 PRIVATE
     "../../JuceLibraryCode"
     "/Users/silveryar/sdk/JUCE_old/modules"
     "../../../external/protobuf/src"
+    "../../../messages"
     "/Users/silveryar/sdk/JUCE_old/modules/juce_audio_plugin_client"
 )
 
@@ -3915,6 +3926,7 @@ target_include_directories (AU PRIVATE
     "../../JuceLibraryCode"
     "/Users/silveryar/sdk/JUCE_old/modules"
     "../../../external/protobuf/src"
+    "../../../messages"
     "/Users/silveryar/sdk/JUCE_old/modules/juce_audio_plugin_client"
 )
 
@@ -4021,6 +4033,7 @@ if (RC_COMPILER)
         -I "${PROJECT_SOURCE_DIR}/../../JuceLibraryCode"
         -I "/Users/silveryar/sdk/JUCE_old/modules"
         -I "${PROJECT_SOURCE_DIR}/../../../external/protobuf/src"
+        -I "${PROJECT_SOURCE_DIR}/../../../messages"
         -I "/Users/silveryar/sdk/JUCE_old/modules/juce_audio_plugin_client"
         ${AU_REZ_SOURCES}
         -o ${AU_REZ_OUTPUT}
@@ -4089,6 +4102,7 @@ target_include_directories (STANDALONE_PLUGIN PRIVATE
     "../../JuceLibraryCode"
     "/Users/silveryar/sdk/JUCE_old/modules"
     "../../../external/protobuf/src"
+    "../../../messages"
     "/Users/silveryar/sdk/JUCE_old/modules/juce_audio_plugin_client"
 )
 
@@ -4221,6 +4235,7 @@ target_include_directories (SHARED_CODE PRIVATE
     "../../JuceLibraryCode"
     "/Users/silveryar/sdk/JUCE_old/modules"
     "../../../external/protobuf/src"
+    "../../../messages"
     "/Users/silveryar/sdk/JUCE_old/modules/juce_audio_plugin_client"
 )
 

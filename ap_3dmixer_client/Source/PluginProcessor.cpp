@@ -270,11 +270,7 @@ void Ap_3dmixer_clientAudioProcessor::valueTreePropertyChanged (juce::ValueTree&
     parameters.SerializeToString(&output);
     juce::MemoryBlock message (output.data(), output.size());
 
-    aproto::Parameters converted;
-    std::string s(message.begin(), message.getSize());
-    converted.ParseFromString(s);
-
-//    connection_->sendMessage(message);
+    connection_->sendMessage(message);
 };
 
 //==============================================================================

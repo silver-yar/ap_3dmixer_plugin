@@ -3,8 +3,15 @@
 <JUCERPROJECT id="qOUU7s" name="ap_3dmixer" projectType="audioplug" useAppConfig="0"
               displaySplashScreen="1" jucerFormatVersion="1" addUsingNamespaceToJuceHeader="0"
               companyName="audio pirate" cppLanguageStandard="latest" defines="HAVE_PTHREAD"
-              headerPath="../../../external/protobuf/src">
+              headerPath="../../../external/protobuf/src&#10;../../../messages">
   <MAINGROUP id="HDMU1b" name="ap_3dmixer">
+    <GROUP id="{796FB7C6-BA6F-ECAE-2CD7-7B63C4BC6A5C}" name="messages">
+      <FILE id="h8aMsB" name="parameters.pb.cc" compile="1" resource="0"
+            file="../messages/parameters.pb.cc"/>
+      <FILE id="Qvlfg0" name="parameters.pb.h" compile="0" resource="0" file="../messages/parameters.pb.h"/>
+      <FILE id="s0Kt5F" name="parameters.proto" compile="0" resource="1"
+            file="../messages/parameters.proto"/>
+    </GROUP>
     <GROUP id="{4C057B02-435E-95B9-9988-EA5D9C3F2DC5}" name="protobuf">
       <FILE id="SQqB2f" name="any_lite.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/any_lite.cc"/>
       <FILE id="yNW8Z7" name="any.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/any.cc"/>
@@ -127,9 +134,6 @@
       </GROUP>
     </GROUP>
     <GROUP id="{AEEA2FEC-89FE-C3C5-F493-529FD27F89AB}" name="Source">
-      <FILE id="bmtKm2" name="parameters.pb.cc" compile="1" resource="0"
-            file="Source/parameters.pb.cc"/>
-      <FILE id="HVCH7W" name="parameters.pb.h" compile="0" resource="0" file="Source/parameters.pb.h"/>
       <FILE id="TntPKD" name="APInterprocessConnection.cpp" compile="1" resource="0"
             file="Source/APInterprocessConnection.cpp"/>
       <FILE id="lcJroB" name="APInterprocessConnection.h" compile="0" resource="0"

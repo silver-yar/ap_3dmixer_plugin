@@ -73,9 +73,309 @@
 			isa = PBXBuildFile;
 			fileRef = 4D6E57E7A65A09DC264729E5;
 		};
-		DC673FF558D4F6821B5D85BF = {
+		7221E39EAFC0CD6C17914617 = {
 			isa = PBXBuildFile;
-			fileRef = 195C7FBD607DB6F4F5047161;
+			fileRef = BE7768098EC1C8DD4D9ABC11;
+		};
+		EC356448A99ED2BAAB29C085 = {
+			isa = PBXBuildFile;
+			fileRef = 52D2BCFCE294A8F641B399AC;
+		};
+		CD1588252090DE9052DF28AC = {
+			isa = PBXBuildFile;
+			fileRef = 3CD3F2935EF8301EB8E4FDAC;
+		};
+		34C390B447444EFF4101AE01 = {
+			isa = PBXBuildFile;
+			fileRef = D57A6438BAEDEB7882ED9318;
+		};
+		656C8E96FCC4354929AB583E = {
+			isa = PBXBuildFile;
+			fileRef = 4AD0590BAC6B61AFCDDAF493;
+		};
+		40C5D003F43FD66D989FAB39 = {
+			isa = PBXBuildFile;
+			fileRef = D5E3A7782723DFACF12EC23E;
+		};
+		4CF6465A03D4C2B1A9EC1B22 = {
+			isa = PBXBuildFile;
+			fileRef = A3750453CBDF54E3CBA8DCCA;
+		};
+		DB89143432086B35FC58F1A0 = {
+			isa = PBXBuildFile;
+			fileRef = 195FF805175628626354AD1A;
+		};
+		975EAFFB4895BE2DA23CCDBA = {
+			isa = PBXBuildFile;
+			fileRef = 59651E3C8DE0A4CBED2A33B0;
+		};
+		F9DA54BDC1B880FA48327CE8 = {
+			isa = PBXBuildFile;
+			fileRef = D15AA055B9EC662EAE3BF937;
+		};
+		F716C0EA0842C7EFA8386EF6 = {
+			isa = PBXBuildFile;
+			fileRef = 4C751C7CF7677404C238D74D;
+		};
+		E10932A3989F756E70F138F6 = {
+			isa = PBXBuildFile;
+			fileRef = 46D15AAB1B34DB5609B53945;
+		};
+		28EB4694EE4C6C0DC66BD177 = {
+			isa = PBXBuildFile;
+			fileRef = E8801E403E7DC022E7100E99;
+		};
+		75CE538FA028ABD248EE42CB = {
+			isa = PBXBuildFile;
+			fileRef = EF33B45D0CB3D40821F88DE4;
+		};
+		E2376FBE4D303E606BD32A52 = {
+			isa = PBXBuildFile;
+			fileRef = B8E76048DFED8CB79BF1A995;
+		};
+		95DDE15A2E7B6A1333D32273 = {
+			isa = PBXBuildFile;
+			fileRef = E5822DABDEDF86DE7CD3A8FB;
+		};
+		C3B1ADA1EFA02F62A366E056 = {
+			isa = PBXBuildFile;
+			fileRef = 670CA5C8A09F83A208653FAF;
+		};
+		8ED3CA3FD5D1AAF8B2AB7446 = {
+			isa = PBXBuildFile;
+			fileRef = E2CC90A98C81A7C53A2957BE;
+		};
+		DDC23FF815F2F95A721225DA = {
+			isa = PBXBuildFile;
+			fileRef = B590BE4A9F4F57533B747B34;
+		};
+		7C247AA46581FEF300BCCD34 = {
+			isa = PBXBuildFile;
+			fileRef = 7285E96F5D7BC87BF111825F;
+		};
+		3A2E7633F35E52D28CA9A10C = {
+			isa = PBXBuildFile;
+			fileRef = C0520148344EFDAC8D6A0E7B;
+		};
+		1379A711A5CD634CDE90BD42 = {
+			isa = PBXBuildFile;
+			fileRef = 5B319A46B00147DE390742C5;
+		};
+		766C21218953BF30689F2F49 = {
+			isa = PBXBuildFile;
+			fileRef = F46E72CF186982ED0610BEFD;
+		};
+		B06CF15233582628B4B81E6C = {
+			isa = PBXBuildFile;
+			fileRef = 1644363393C95657840F96E1;
+		};
+		2E7895F0689D9A6EB07A2DDA = {
+			isa = PBXBuildFile;
+			fileRef = C793994881185B3CD2D87D87;
+		};
+		09AC6919E9ADECE0D019BDFC = {
+			isa = PBXBuildFile;
+			fileRef = ABBCEC76A2867189CAB232ED;
+		};
+		87FAE6687C0584CD58F1B8ED = {
+			isa = PBXBuildFile;
+			fileRef = 5E8EDDC5CB374D9007D94C7F;
+		};
+		0D882F389420A0AD43F05E55 = {
+			isa = PBXBuildFile;
+			fileRef = 154D2FFBC4BD8DAF9D057AE2;
+		};
+		752DC3805169E32728FABB7C = {
+			isa = PBXBuildFile;
+			fileRef = ABEA3726B17DA7D4E0F3332C;
+		};
+		D1F24935F0DF0DC7FA1D772B = {
+			isa = PBXBuildFile;
+			fileRef = 0DF24A1161DBEE01EFBD6404;
+		};
+		0B29BAA2084C23967ABE98F1 = {
+			isa = PBXBuildFile;
+			fileRef = 6ED3569B48E2201722E1E85B;
+		};
+		983FAB476EFF46F30EB4561F = {
+			isa = PBXBuildFile;
+			fileRef = 1F084FA53D7EB34D4CB4986D;
+		};
+		9F3CE5A69C65A53E1921C78A = {
+			isa = PBXBuildFile;
+			fileRef = 46695C34480D5EAFC2AF7BE7;
+		};
+		3A8A85FB19ECB24FE801B713 = {
+			isa = PBXBuildFile;
+			fileRef = 0619ADEA4BD189E6384E6215;
+		};
+		CDBE035F441686DEDDA46645 = {
+			isa = PBXBuildFile;
+			fileRef = 9E519DC089334FBD3CC85AB1;
+		};
+		4D754B0F8C26BDE7544276A8 = {
+			isa = PBXBuildFile;
+			fileRef = 2C2613E127346BFD602884A8;
+		};
+		ADD94CB8786B5D9F5BF731AF = {
+			isa = PBXBuildFile;
+			fileRef = 665362EF6731AA153489A520;
+		};
+		A7C7FB494F62F396D3E2F428 = {
+			isa = PBXBuildFile;
+			fileRef = 298D35CC5F964792E312A91A;
+		};
+		3381AE33EEA6AA74B3E2BC80 = {
+			isa = PBXBuildFile;
+			fileRef = 3CD9322C41DB22DEF0F056D5;
+		};
+		C5AA3F83062B7685BC0CFD95 = {
+			isa = PBXBuildFile;
+			fileRef = CFEC3B62228A4DB36BA1735B;
+		};
+		C9CDE3AF03B39AEE6E4686FC = {
+			isa = PBXBuildFile;
+			fileRef = 92600982D6F8A4FEC101C321;
+		};
+		3DB2E06E5496919AF1497279 = {
+			isa = PBXBuildFile;
+			fileRef = D320A4A1047ED72B15A7E75D;
+		};
+		E2416AEE36CF3CDE3E60F38A = {
+			isa = PBXBuildFile;
+			fileRef = 35633B4FF28610384FCFA76C;
+		};
+		528CA2735D9BF91F52BE38F2 = {
+			isa = PBXBuildFile;
+			fileRef = E332CD3818023B298B20BCED;
+		};
+		CB050493B72804E574AFABF5 = {
+			isa = PBXBuildFile;
+			fileRef = E7A152C51AAC3CB62976FEA4;
+		};
+		D4D6C17AB3A6327FEEA8C5AD = {
+			isa = PBXBuildFile;
+			fileRef = 53E1A1259B1C4243C66D0E8D;
+		};
+		6BFA6880B4C4D5B162A4B86D = {
+			isa = PBXBuildFile;
+			fileRef = A70528F12B9D4B62008D5755;
+		};
+		38AC23F29D4C0BCA844DFAEB = {
+			isa = PBXBuildFile;
+			fileRef = 4E083304A3BC74A6579B7BC6;
+		};
+		A1690E02C0D8139979A6ACB1 = {
+			isa = PBXBuildFile;
+			fileRef = D4959E559B4F4FF099AEADD0;
+		};
+		D694A654D8BFA7AA8DAB6E6B = {
+			isa = PBXBuildFile;
+			fileRef = 9405F68BF0AF164E74AFD49C;
+		};
+		7CBD17EC62BB7C36790D350E = {
+			isa = PBXBuildFile;
+			fileRef = 149E0087802DD73242ACBE6C;
+		};
+		C0DBB9D417A28E3BEB920BF0 = {
+			isa = PBXBuildFile;
+			fileRef = FB8CAE16512D642C5F55C45C;
+		};
+		63C62A9E3C96AC4CEFB68047 = {
+			isa = PBXBuildFile;
+			fileRef = 4472A6F864DD9D61F6E1B3E0;
+		};
+		34BE9D7182619C763507C55F = {
+			isa = PBXBuildFile;
+			fileRef = 614A2E12919A0C220A654C5C;
+		};
+		2B5F0A44DEE13F8E76B4C44C = {
+			isa = PBXBuildFile;
+			fileRef = 2B68FD473ECB8AC4AEC48B20;
+		};
+		B6422F947ED59E9D737FAE8B = {
+			isa = PBXBuildFile;
+			fileRef = 6878A214952DF93B0B7A3B26;
+		};
+		12819428B006BBFE4A33299D = {
+			isa = PBXBuildFile;
+			fileRef = 6784DC46E9A8E76B5AA30FD4;
+		};
+		B1CFD5D8C55A509082407D43 = {
+			isa = PBXBuildFile;
+			fileRef = 2C569960603A12B6572F91F7;
+		};
+		E770ACD14DD98AE90EFEFB29 = {
+			isa = PBXBuildFile;
+			fileRef = 9708D78343E9D9CA2E493104;
+		};
+		1532F96E4B1D49A53A97EE4C = {
+			isa = PBXBuildFile;
+			fileRef = 9F0AAA67F011FB42409C63DA;
+		};
+		12BB5CE1DE0DFEBD8093FC6C = {
+			isa = PBXBuildFile;
+			fileRef = B743A118A48E51724DA0129E;
+		};
+		870ABD65038BD9EAC84E1298 = {
+			isa = PBXBuildFile;
+			fileRef = 2BD961684B40EED0CC1E6C00;
+		};
+		7F4ADDFBB59D484C9E7772BC = {
+			isa = PBXBuildFile;
+			fileRef = F82321D5020BA68E4A22C753;
+		};
+		4ECA9288CE83DD6D231FD579 = {
+			isa = PBXBuildFile;
+			fileRef = FD660AD94848F79C6E19DFFA;
+		};
+		D7788824ACC6B5F73FDEBD69 = {
+			isa = PBXBuildFile;
+			fileRef = A226B389D2F466F9DDA7936C;
+		};
+		312AA6CF06035D473F227676 = {
+			isa = PBXBuildFile;
+			fileRef = 322520C2B264DDF32D7670E6;
+		};
+		C16D10FD80A267430212BFAF = {
+			isa = PBXBuildFile;
+			fileRef = C6B0DB466A045BACF742E7A5;
+		};
+		A4CF3409673A6C811A8CFE0F = {
+			isa = PBXBuildFile;
+			fileRef = F78775BB4D3DF3DF2B6CBA85;
+		};
+		1B4D38B43F4DF7ECEDA066FA = {
+			isa = PBXBuildFile;
+			fileRef = 069343CC6AB09F4D5816FB3A;
+		};
+		1366132A04BDAF9FA25A48BD = {
+			isa = PBXBuildFile;
+			fileRef = D0A908A5B16785C56C1A5AEA;
+		};
+		C99F31460505729A2EC2544B = {
+			isa = PBXBuildFile;
+			fileRef = C26E05D1E536B7CCC618DC63;
+		};
+		967D98EEB99EC006B5BD55C5 = {
+			isa = PBXBuildFile;
+			fileRef = 051F45F69267C764D79375B0;
+		};
+		53D79BDCA7B44667F3F2A32A = {
+			isa = PBXBuildFile;
+			fileRef = 94CE97F910420D37CC21DEFA;
+		};
+		F22D45EE360F4E2168B80525 = {
+			isa = PBXBuildFile;
+			fileRef = 8D8745F68BB874620AE925FC;
+		};
+		D704574EDDB2EF1D76569998 = {
+			isa = PBXBuildFile;
+			fileRef = 22DA6C4AFB6B885E3312ECE0;
+		};
+		3CBD73EB2222D1F417268F9F = {
+			isa = PBXBuildFile;
+			fileRef = 18058EA86B0F9121304CA79E;
 		};
 		1A40E8737222EAAA46EAB196 = {
 			isa = PBXBuildFile;
@@ -179,11 +479,74 @@
 			path = System/Library/Frameworks/IOKit.framework;
 			sourceTree = SDKROOT;
 		};
-		195C7FBD607DB6F4F5047161 = {
+		051F45F69267C764D79375B0 = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.cpp;
-			name = parameters.pb.cc;
-			path = ../../Source/parameters.pb.cc;
+			name = "structurally_valid.cc";
+			path = "../../../external/protobuf/src/google/protobuf/stubs/structurally_valid.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		0619ADEA4BD189E6384E6215 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = empty.pb.cc;
+			path = ../../../external/protobuf/src/google/protobuf/empty.pb.cc;
+			sourceTree = "SOURCE_ROOT";
+		};
+		069343CC6AB09F4D5816FB3A = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = status.cc;
+			path = ../../../external/protobuf/src/google/protobuf/stubs/status.cc;
+			sourceTree = "SOURCE_ROOT";
+		};
+		0DF24A1161DBEE01EFBD6404 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = descriptor.cc;
+			path = ../../../external/protobuf/src/google/protobuf/descriptor.cc;
+			sourceTree = "SOURCE_ROOT";
+		};
+		105F0F91171EA6C14052C0E2 = {
+			isa = PBXFileReference;
+			lastKnownFileType = file.proto;
+			name = parameters.proto;
+			path = ../../../messages/parameters.proto;
+			sourceTree = "SOURCE_ROOT";
+		};
+		149E0087802DD73242ACBE6C = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "field_comparator.cc";
+			path = "../../../external/protobuf/src/google/protobuf/util/field_comparator.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		154D2FFBC4BD8DAF9D057AE2 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = arena.cc;
+			path = ../../../external/protobuf/src/google/protobuf/arena.cc;
+			sourceTree = "SOURCE_ROOT";
+		};
+		1644363393C95657840F96E1 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "any_lite.cc";
+			path = "../../../external/protobuf/src/google/protobuf/any_lite.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		18058EA86B0F9121304CA79E = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = stringpiece.cc;
+			path = ../../../external/protobuf/src/google/protobuf/stubs/stringpiece.cc;
+			sourceTree = "SOURCE_ROOT";
+		};
+		195FF805175628626354AD1A = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "map_field.cc";
+			path = "../../../external/protobuf/src/google/protobuf/map_field.cc";
 			sourceTree = "SOURCE_ROOT";
 		};
 		1A93E843356BE60F07A26D5D = {
@@ -207,6 +570,13 @@
 			path = "../../JuceLibraryCode/include_juce_gui_extra.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
+		1F084FA53D7EB34D4CB4986D = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = duration.pb.cc;
+			path = ../../../external/protobuf/src/google/protobuf/duration.pb.cc;
+			sourceTree = "SOURCE_ROOT";
+		};
 		216FF679CDAFDFA87DC0457A = {
 			isa = PBXFileReference;
 			lastKnownFileType = text.plist.xml;
@@ -214,18 +584,60 @@
 			path = "Info-VST3.plist";
 			sourceTree = "SOURCE_ROOT";
 		};
-		2B37C4FE6036BFE9636B9729 = {
+		22DA6C4AFB6B885E3312ECE0 = {
 			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.cpp.objcpp;
-			name = "include_juce_audio_processors.mm";
-			path = "../../JuceLibraryCode/include_juce_audio_processors.mm";
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = time.cc;
+			path = ../../../external/protobuf/src/google/protobuf/stubs/time.cc;
 			sourceTree = "SOURCE_ROOT";
 		};
-		33DF2582E585B09DD150EEC7 = {
+		298D35CC5F964792E312A91A = {
 			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.cpp.objcpp;
-			name = "include_juce_data_structures.mm";
-			path = "../../JuceLibraryCode/include_juce_data_structures.mm";
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "default_value_objectwriter.cc";
+			path = "../../../external/protobuf/src/google/protobuf/util/internal/default_value_objectwriter.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		2B68FD473ECB8AC4AEC48B20 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "time_util.cc";
+			path = "../../../external/protobuf/src/google/protobuf/util/time_util.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		2BD961684B40EED0CC1E6C00 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = tokenizer.cc;
+			path = ../../../external/protobuf/src/google/protobuf/io/tokenizer.cc;
+			sourceTree = "SOURCE_ROOT";
+		};
+		2C2613E127346BFD602884A8 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "extension_set.cc";
+			path = "../../../external/protobuf/src/google/protobuf/extension_set.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		2C569960603A12B6572F91F7 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "gzip_stream.cc";
+			path = "../../../external/protobuf/src/google/protobuf/io/gzip_stream.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		322520C2B264DDF32D7670E6 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = bytestream.cc;
+			path = ../../../external/protobuf/src/google/protobuf/stubs/bytestream.cc;
+			sourceTree = "SOURCE_ROOT";
+		};
+		35633B4FF28610384FCFA76C = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "json_stream_parser.cc";
+			path = "../../../external/protobuf/src/google/protobuf/util/internal/json_stream_parser.cc";
 			sourceTree = "SOURCE_ROOT";
 		};
 		3642F8EF582BFB003F8DB185 = {
@@ -235,11 +647,53 @@
 			path = ../../JuceLibraryCode/BinaryData.h;
 			sourceTree = "SOURCE_ROOT";
 		};
-		3DB3CF6565F3A5E7972A9AB9 = {
+		38436F485824B705AE602777 = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.cpp;
-			name = "include_juce_audio_plugin_client_VST3.cpp";
-			path = "../../JuceLibraryCode/include_juce_audio_plugin_client_VST3.cpp";
+			name = PluginProcessor.cpp;
+			path = ../../Source/PluginProcessor.cpp;
+			sourceTree = "SOURCE_ROOT";
+		};
+		3CD3F2935EF8301EB8E4FDAC = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "generated_message_reflection.cc";
+			path = "../../../external/protobuf/src/google/protobuf/generated_message_reflection.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		3CD9322C41DB22DEF0F056D5 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "error_listener.cc";
+			path = "../../../external/protobuf/src/google/protobuf/util/internal/error_listener.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		439595E1A8AB304A1FE96073 = {
+			isa = PBXFileReference;
+			lastKnownFileType = file;
+			name = "juce_audio_devices";
+			path = "/Users/silveryar/sdk/JUCE_old/modules/juce_audio_devices";
+			sourceTree = "<absolute>";
+		};
+		4E7625A9410E1B65D8C4B27D = {
+			isa = PBXFileReference;
+			lastKnownFileType = file;
+			name = "juce_audio_plugin_client";
+			path = "/Users/silveryar/sdk/JUCE_old/modules/juce_audio_plugin_client";
+			sourceTree = "<absolute>";
+		};
+		5380533DAF933F60D0970EC0 = {
+			isa = PBXFileReference;
+			lastKnownFileType = file;
+			name = "juce_audio_basics";
+			path = "/Users/silveryar/sdk/JUCE_old/modules/juce_audio_basics";
+			sourceTree = "<absolute>";
+		};
+		53BB0517BBDB499405E6D9AD = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = stringpiece.h;
+			path = ../../../external/protobuf/src/google/protobuf/stubs/stringpiece.h;
 			sourceTree = "SOURCE_ROOT";
 		};
 		A65152CBBB8D8647CBDC316E = {
@@ -256,25 +710,25 @@
 			path = "ap_3dmixer_client.component";
 			sourceTree = "BUILT_PRODUCTS_DIR";
 		};
-		3798B1B28894495A17F5AAB4 = {
+		2B37C4FE6036BFE9636B9729 = {
 			isa = PBXFileReference;
-			lastKnownFileType = file.proto;
-			name = parameters.proto;
-			path = ../../Source/parameters.proto;
+			lastKnownFileType = sourcecode.cpp.objcpp;
+			name = "include_juce_audio_processors.mm";
+			path = "../../JuceLibraryCode/include_juce_audio_processors.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
-		381ED54FD1284EE100180E64 = {
+		33DF2582E585B09DD150EEC7 = {
 			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.c.h;
-			name = parameters.pb.h;
-			path = ../../Source/parameters.pb.h;
+			lastKnownFileType = sourcecode.cpp.objcpp;
+			name = "include_juce_data_structures.mm";
+			path = "../../JuceLibraryCode/include_juce_data_structures.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
-		38436F485824B705AE602777 = {
+		3DB3CF6565F3A5E7972A9AB9 = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.cpp;
-			name = PluginProcessor.cpp;
-			path = ../../Source/PluginProcessor.cpp;
+			name = "include_juce_audio_plugin_client_VST3.cpp";
+			path = "../../JuceLibraryCode/include_juce_audio_plugin_client_VST3.cpp";
 			sourceTree = "SOURCE_ROOT";
 		};
 		3E4E16C90445254D6A66660B = {
@@ -284,12 +738,26 @@
 			path = "Info-Standalone_Plugin.plist";
 			sourceTree = "SOURCE_ROOT";
 		};
-		439595E1A8AB304A1FE96073 = {
+		4472A6F864DD9D61F6E1B3E0 = {
 			isa = PBXFileReference;
-			lastKnownFileType = file;
-			name = "juce_audio_devices";
-			path = "/Users/silveryar/sdk/JUCE_old/modules/juce_audio_devices";
-			sourceTree = "<absolute>";
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "json_util.cc";
+			path = "../../../external/protobuf/src/google/protobuf/util/json_util.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		46695C34480D5EAFC2AF7BE7 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "dynamic_message.cc";
+			path = "../../../external/protobuf/src/google/protobuf/dynamic_message.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		46D15AAB1B34DB5609B53945 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "reflection_ops.cc";
+			path = "../../../external/protobuf/src/google/protobuf/reflection_ops.cc";
+			sourceTree = "SOURCE_ROOT";
 		};
 		49E85D37B2069043D4DFD456 = {
 			isa = PBXFileReference;
@@ -298,6 +766,20 @@
 			path = System/Library/Frameworks/CoreAudioKit.framework;
 			sourceTree = SDKROOT;
 		};
+		4AD0590BAC6B61AFCDDAF493 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "generated_message_table_driven.cc";
+			path = "../../../external/protobuf/src/google/protobuf/generated_message_table_driven.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		4C751C7CF7677404C238D74D = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "parse_context.cc";
+			path = "../../../external/protobuf/src/google/protobuf/parse_context.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
 		4D6E57E7A65A09DC264729E5 = {
 			isa = PBXFileReference;
 			lastKnownFileType = file.nib;
@@ -305,19 +787,82 @@
 			path = RecentFilesMenuTemplate.nib;
 			sourceTree = "SOURCE_ROOT";
 		};
-		4E7625A9410E1B65D8C4B27D = {
+		4E083304A3BC74A6579B7BC6 = {
 			isa = PBXFileReference;
-			lastKnownFileType = file;
-			name = "juce_audio_plugin_client";
-			path = "/Users/silveryar/sdk/JUCE_old/modules/juce_audio_plugin_client";
-			sourceTree = "<absolute>";
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "type_info.cc";
+			path = "../../../external/protobuf/src/google/protobuf/util/internal/type_info.cc";
+			sourceTree = "SOURCE_ROOT";
 		};
-		5380533DAF933F60D0970EC0 = {
+		52D2BCFCE294A8F641B399AC = {
 			isa = PBXFileReference;
-			lastKnownFileType = file;
-			name = "juce_audio_basics";
-			path = "/Users/silveryar/sdk/JUCE_old/modules/juce_audio_basics";
-			sourceTree = "<absolute>";
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "generated_enum_util.cc";
+			path = "../../../external/protobuf/src/google/protobuf/generated_enum_util.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		53E1A1259B1C4243C66D0E8D = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "protostream_objectsource.cc";
+			path = "../../../external/protobuf/src/google/protobuf/util/internal/protostream_objectsource.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		59651E3C8DE0A4CBED2A33B0 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "message_lite.cc";
+			path = "../../../external/protobuf/src/google/protobuf/message_lite.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		5B319A46B00147DE390742C5 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "wire_format.cc";
+			path = "../../../external/protobuf/src/google/protobuf/wire_format.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		5E8EDDC5CB374D9007D94C7F = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = api.pb.cc;
+			path = ../../../external/protobuf/src/google/protobuf/api.pb.cc;
+			sourceTree = "SOURCE_ROOT";
+		};
+		614A2E12919A0C220A654C5C = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "message_differencer.cc";
+			path = "../../../external/protobuf/src/google/protobuf/util/message_differencer.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		665362EF6731AA153489A520 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = datapiece.cc;
+			path = ../../../external/protobuf/src/google/protobuf/util/internal/datapiece.cc;
+			sourceTree = "SOURCE_ROOT";
+		};
+		670CA5C8A09F83A208653FAF = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "text_format.cc";
+			path = "../../../external/protobuf/src/google/protobuf/text_format.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		6784DC46E9A8E76B5AA30FD4 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "coded_stream.cc";
+			path = "../../../external/protobuf/src/google/protobuf/io/coded_stream.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		6878A214952DF93B0B7A3B26 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "type_resolver_util.cc";
+			path = "../../../external/protobuf/src/google/protobuf/util/type_resolver_util.cc";
+			sourceTree = "SOURCE_ROOT";
 		};
 		68887E68DE21E0873C1D36DF = {
 			isa = PBXFileReference;
@@ -340,6 +885,13 @@
 			path = "/Users/silveryar/sdk/JUCE_old/modules/juce_graphics";
 			sourceTree = "<absolute>";
 		};
+		698B743D0BC1B28427245460 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = parameters.pb.h;
+			path = ../../../messages/parameters.pb.h;
+			sourceTree = "SOURCE_ROOT";
+		};
 		69E41C21D425BDE32D96ACEB = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.c.h;
@@ -353,6 +905,20 @@
 			name = "juce_events";
 			path = "/Users/silveryar/sdk/JUCE_old/modules/juce_events";
 			sourceTree = "<absolute>";
+		};
+		6ED3569B48E2201722E1E85B = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = descriptor.pb.cc;
+			path = ../../../external/protobuf/src/google/protobuf/descriptor.pb.cc;
+			sourceTree = "SOURCE_ROOT";
+		};
+		7285E96F5D7BC87BF111825F = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "unknown_field_set.cc";
+			path = "../../../external/protobuf/src/google/protobuf/unknown_field_set.cc";
+			sourceTree = "SOURCE_ROOT";
 		};
 		7461D2851B105BF202FB728D = {
 			isa = PBXFileReference;
@@ -382,6 +948,13 @@
 			path = "/Users/silveryar/sdk/JUCE_old/modules/juce_gui_extra";
 			sourceTree = "<absolute>";
 		};
+		8D8745F68BB874620AE925FC = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = substitute.cc;
+			path = ../../../external/protobuf/src/google/protobuf/stubs/substitute.cc;
+			sourceTree = "SOURCE_ROOT";
+		};
 		8F86A7A10DE1B892D67AFD3C = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.objcpp;
@@ -401,6 +974,27 @@
 			lastKnownFileType = sourcecode.cpp.objcpp;
 			name = "include_juce_core.mm";
 			path = "../../JuceLibraryCode/include_juce_core.mm";
+			sourceTree = "SOURCE_ROOT";
+		};
+		92600982D6F8A4FEC101C321 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "json_escaping.cc";
+			path = "../../../external/protobuf/src/google/protobuf/util/internal/json_escaping.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		9405F68BF0AF164E74AFD49C = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "delimited_message_util.cc";
+			path = "../../../external/protobuf/src/google/protobuf/util/delimited_message_util.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		94CE97F910420D37CC21DEFA = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = strutil.cc;
+			path = ../../../external/protobuf/src/google/protobuf/stubs/strutil.cc;
 			sourceTree = "SOURCE_ROOT";
 		};
 		9E47C1826D3C3307AE37F749 = {
@@ -424,6 +1018,13 @@
 			path = "../../JuceLibraryCode/include_juce_audio_plugin_client_VST_utils.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
+		A3750453CBDF54E3CBA8DCCA = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "implicit_weak_message.cc";
+			path = "../../../external/protobuf/src/google/protobuf/implicit_weak_message.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
 		AB0A075621434FB6D586E479 = {
 			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
@@ -431,11 +1032,32 @@
 			path = System/Library/Frameworks/CoreAudio.framework;
 			sourceTree = SDKROOT;
 		};
+		ABBCEC76A2867189CAB232ED = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = any.pb.cc;
+			path = ../../../external/protobuf/src/google/protobuf/any.pb.cc;
+			sourceTree = "SOURCE_ROOT";
+		};
+		ABEA3726B17DA7D4E0F3332C = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "descriptor_database.cc";
+			path = "../../../external/protobuf/src/google/protobuf/descriptor_database.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
 		ADCF6148781644B1F5A94DC3 = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.cpp;
 			name = PluginEditor.cpp;
 			path = ../../Source/PluginEditor.cpp;
+			sourceTree = "SOURCE_ROOT";
+		};
+		ADD877F029022C35A64BB286 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = BinaryData.cpp;
+			path = ../../JuceLibraryCode/BinaryData.cpp;
 			sourceTree = "SOURCE_ROOT";
 		};
 		B0A305BE98A9600ACAF1233E = {
@@ -445,11 +1067,11 @@
 			path = "../../JuceLibraryCode/include_juce_audio_plugin_client_Standalone.cpp";
 			sourceTree = "SOURCE_ROOT";
 		};
-		BA290197B9BE9B00B0A55C76 = {
+		B8E76048DFED8CB79BF1A995 = {
 			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.c.h;
-			name = APInterprocessConnection.h;
-			path = ../../Source/APInterprocessConnection.h;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "source_context.pb.cc";
+			path = "../../../external/protobuf/src/google/protobuf/source_context.pb.cc";
 			sourceTree = "SOURCE_ROOT";
 		};
 		BC9C1D15A6C52AAAD169778D = {
@@ -458,6 +1080,34 @@
 			name = AudioUnit.framework;
 			path = System/Library/Frameworks/AudioUnit.framework;
 			sourceTree = SDKROOT;
+		};
+		BE7768098EC1C8DD4D9ABC11 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = parameters.pb.cc;
+			path = ../../../messages/parameters.pb.cc;
+			sourceTree = "SOURCE_ROOT";
+		};
+		CFEC3B62228A4DB36BA1735B = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "field_mask_utility.cc";
+			path = "../../../external/protobuf/src/google/protobuf/util/internal/field_mask_utility.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		D15AA055B9EC662EAE3BF937 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = message.cc;
+			path = ../../../external/protobuf/src/google/protobuf/message.cc;
+			sourceTree = "SOURCE_ROOT";
+		};
+		D320A4A1047ED72B15A7E75D = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "json_objectwriter.cc";
+			path = "../../../external/protobuf/src/google/protobuf/util/internal/json_objectwriter.cc";
+			sourceTree = "SOURCE_ROOT";
 		};
 		D34D68C5CDB2096B339E4A3F = {
 			isa = PBXFileReference;
@@ -480,11 +1130,74 @@
 			path = "libap_3dmixer_client.a";
 			sourceTree = "BUILT_PRODUCTS_DIR";
 		};
-		ADD877F029022C35A64BB286 = {
+		9708D78343E9D9CA2E493104 = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.cpp;
-			name = BinaryData.cpp;
-			path = ../../JuceLibraryCode/BinaryData.cpp;
+			name = "io_win32.cc";
+			path = "../../../external/protobuf/src/google/protobuf/io/io_win32.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		9E519DC089334FBD3CC85AB1 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "extension_set_heavy.cc";
+			path = "../../../external/protobuf/src/google/protobuf/extension_set_heavy.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		9F0AAA67F011FB42409C63DA = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = printer.cc;
+			path = ../../../external/protobuf/src/google/protobuf/io/printer.cc;
+			sourceTree = "SOURCE_ROOT";
+		};
+		A226B389D2F466F9DDA7936C = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "zero_copy_stream_impl_lite.cc";
+			path = "../../../external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		A70528F12B9D4B62008D5755 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "protostream_objectwriter.cc";
+			path = "../../../external/protobuf/src/google/protobuf/util/internal/protostream_objectwriter.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		B590BE4A9F4F57533B747B34 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = type.pb.cc;
+			path = ../../../external/protobuf/src/google/protobuf/type.pb.cc;
+			sourceTree = "SOURCE_ROOT";
+		};
+		B743A118A48E51724DA0129E = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = strtod.cc;
+			path = ../../../external/protobuf/src/google/protobuf/io/strtod.cc;
+			sourceTree = "SOURCE_ROOT";
+		};
+		BA290197B9BE9B00B0A55C76 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = APInterprocessConnection.h;
+			path = ../../Source/APInterprocessConnection.h;
+			sourceTree = "SOURCE_ROOT";
+		};
+		C0520148344EFDAC8D6A0E7B = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "wire_format_lite.cc";
+			path = "../../../external/protobuf/src/google/protobuf/wire_format_lite.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		C26E05D1E536B7CCC618DC63 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = stringprintf.cc;
+			path = ../../../external/protobuf/src/google/protobuf/stubs/stringprintf.cc;
 			sourceTree = "SOURCE_ROOT";
 		};
 		C5C022246E79D112E07B4DCF = {
@@ -494,11 +1207,32 @@
 			path = "/Users/silveryar/sdk/JUCE_old/modules/juce_data_structures";
 			sourceTree = "<absolute>";
 		};
+		C6B0DB466A045BACF742E7A5 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = common.cc;
+			path = ../../../external/protobuf/src/google/protobuf/stubs/common.cc;
+			sourceTree = "SOURCE_ROOT";
+		};
+		C793994881185B3CD2D87D87 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = any.cc;
+			path = ../../../external/protobuf/src/google/protobuf/any.cc;
+			sourceTree = "SOURCE_ROOT";
+		};
 		CDE81886FF2C72F489E1F81A = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.cpp;
 			name = "include_juce_audio_plugin_client_utils.cpp";
 			path = "../../JuceLibraryCode/include_juce_audio_plugin_client_utils.cpp";
+			sourceTree = "SOURCE_ROOT";
+		};
+		D0A908A5B16785C56C1A5AEA = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = statusor.cc;
+			path = ../../../external/protobuf/src/google/protobuf/stubs/statusor.cc;
 			sourceTree = "SOURCE_ROOT";
 		};
 		D399F65F9AADE20C095C01E9 = {
@@ -507,6 +1241,27 @@
 			name = "juce_audio_utils";
 			path = "/Users/silveryar/sdk/JUCE_old/modules/juce_audio_utils";
 			sourceTree = "<absolute>";
+		};
+		D4959E559B4F4FF099AEADD0 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = utility.cc;
+			path = ../../../external/protobuf/src/google/protobuf/util/internal/utility.cc;
+			sourceTree = "SOURCE_ROOT";
+		};
+		D57A6438BAEDEB7882ED9318 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "generated_message_table_driven_lite.cc";
+			path = "../../../external/protobuf/src/google/protobuf/generated_message_table_driven_lite.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		D5E3A7782723DFACF12EC23E = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "generated_message_util.cc";
+			path = "../../../external/protobuf/src/google/protobuf/generated_message_util.cc";
+			sourceTree = "SOURCE_ROOT";
 		};
 		D5E98D477388E819AD269030 = {
 			isa = PBXFileReference;
@@ -529,6 +1284,13 @@
 			path = "/Users/silveryar/sdk/JUCE_old/modules/juce_gui_basics";
 			sourceTree = "<absolute>";
 		};
+		E2CC90A98C81A7C53A2957BE = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = timestamp.pb.cc;
+			path = ../../../external/protobuf/src/google/protobuf/timestamp.pb.cc;
+			sourceTree = "SOURCE_ROOT";
+		};
 		E30855015CCD6B8B6CAC4F32 = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.objcpp;
@@ -536,11 +1298,39 @@
 			path = "../../JuceLibraryCode/include_juce_audio_plugin_client_AU_1.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
+		E332CD3818023B298B20BCED = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "object_writer.cc";
+			path = "../../../external/protobuf/src/google/protobuf/util/internal/object_writer.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		E5822DABDEDF86DE7CD3A8FB = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = struct.pb.cc;
+			path = ../../../external/protobuf/src/google/protobuf/struct.pb.cc;
+			sourceTree = "SOURCE_ROOT";
+		};
 		E735D604393B89DE6EB6DB05 = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.objcpp;
 			name = "include_juce_audio_basics.mm";
 			path = "../../JuceLibraryCode/include_juce_audio_basics.mm";
+			sourceTree = "SOURCE_ROOT";
+		};
+		E7A152C51AAC3CB62976FEA4 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "proto_writer.cc";
+			path = "../../../external/protobuf/src/google/protobuf/util/internal/proto_writer.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		E8801E403E7DC022E7100E99 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "repeated_field.cc";
+			path = "../../../external/protobuf/src/google/protobuf/repeated_field.cc";
 			sourceTree = "SOURCE_ROOT";
 		};
 		E8E3D280083E7CE250FF5CE4 = {
@@ -571,6 +1361,13 @@
 			path = "/Users/silveryar/sdk/JUCE_old/modules/juce_audio_formats";
 			sourceTree = "<absolute>";
 		};
+		EF33B45D0CB3D40821F88DE4 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = service.cc;
+			path = ../../../external/protobuf/src/google/protobuf/service.cc;
+			sourceTree = "SOURCE_ROOT";
+		};
 		F3D4D805DBC95B98AC92F609 = {
 			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
@@ -578,11 +1375,32 @@
 			path = System/Library/Frameworks/Cocoa.framework;
 			sourceTree = SDKROOT;
 		};
+		F46E72CF186982ED0610BEFD = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = wrappers.pb.cc;
+			path = ../../../external/protobuf/src/google/protobuf/wrappers.pb.cc;
+			sourceTree = "SOURCE_ROOT";
+		};
 		F5CC2B5A0A39DC11256A5D21 = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.objcpp;
 			name = "include_juce_audio_utils.mm";
 			path = "../../JuceLibraryCode/include_juce_audio_utils.mm";
+			sourceTree = "SOURCE_ROOT";
+		};
+		F78775BB4D3DF3DF2B6CBA85 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = int128.cc;
+			path = ../../../external/protobuf/src/google/protobuf/stubs/int128.cc;
+			sourceTree = "SOURCE_ROOT";
+		};
+		F82321D5020BA68E4A22C753 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "zero_copy_stream.cc";
+			path = "../../../external/protobuf/src/google/protobuf/io/zero_copy_stream.cc";
 			sourceTree = "SOURCE_ROOT";
 		};
 		F829D6223505322A66AB72AE = {
@@ -606,12 +1424,148 @@
 			path = ../../Source/PluginEditor.h;
 			sourceTree = "SOURCE_ROOT";
 		};
+		FB8CAE16512D642C5F55C45C = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "field_mask_util.cc";
+			path = "../../../external/protobuf/src/google/protobuf/util/field_mask_util.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		FD660AD94848F79C6E19DFFA = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "zero_copy_stream_impl.cc";
+			path = "../../../external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.cc";
+			sourceTree = "SOURCE_ROOT";
+		};
+		303C6748A3C8512EF491BC43 = {
+			isa = PBXGroup;
+			children = (
+				BE7768098EC1C8DD4D9ABC11,
+				698B743D0BC1B28427245460,
+				105F0F91171EA6C14052C0E2,
+			);
+			name = messages;
+			sourceTree = "<group>";
+		};
+		605E7DAB2FAA99CBB6F38E59 = {
+			isa = PBXGroup;
+			children = (
+				665362EF6731AA153489A520,
+				298D35CC5F964792E312A91A,
+				3CD9322C41DB22DEF0F056D5,
+				CFEC3B62228A4DB36BA1735B,
+				92600982D6F8A4FEC101C321,
+				D320A4A1047ED72B15A7E75D,
+				35633B4FF28610384FCFA76C,
+				E332CD3818023B298B20BCED,
+				E7A152C51AAC3CB62976FEA4,
+				53E1A1259B1C4243C66D0E8D,
+				A70528F12B9D4B62008D5755,
+				4E083304A3BC74A6579B7BC6,
+				D4959E559B4F4FF099AEADD0,
+			);
+			name = internal;
+			sourceTree = "<group>";
+		};
+		0058C2B357E15E8F65401013 = {
+			isa = PBXGroup;
+			children = (
+				605E7DAB2FAA99CBB6F38E59,
+				9405F68BF0AF164E74AFD49C,
+				149E0087802DD73242ACBE6C,
+				FB8CAE16512D642C5F55C45C,
+				4472A6F864DD9D61F6E1B3E0,
+				614A2E12919A0C220A654C5C,
+				2B68FD473ECB8AC4AEC48B20,
+				6878A214952DF93B0B7A3B26,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		135437656D9E413A6B3D14BA = {
+			isa = PBXGroup;
+			children = (
+				6784DC46E9A8E76B5AA30FD4,
+				2C569960603A12B6572F91F7,
+				9708D78343E9D9CA2E493104,
+				9F0AAA67F011FB42409C63DA,
+				B743A118A48E51724DA0129E,
+				2BD961684B40EED0CC1E6C00,
+				F82321D5020BA68E4A22C753,
+				FD660AD94848F79C6E19DFFA,
+				A226B389D2F466F9DDA7936C,
+			);
+			name = io;
+			sourceTree = "<group>";
+		};
+		0DA1A95178C3E272F9C28ACB = {
+			isa = PBXGroup;
+			children = (
+				322520C2B264DDF32D7670E6,
+				C6B0DB466A045BACF742E7A5,
+				F78775BB4D3DF3DF2B6CBA85,
+				069343CC6AB09F4D5816FB3A,
+				D0A908A5B16785C56C1A5AEA,
+				C26E05D1E536B7CCC618DC63,
+				051F45F69267C764D79375B0,
+				94CE97F910420D37CC21DEFA,
+				8D8745F68BB874620AE925FC,
+				22DA6C4AFB6B885E3312ECE0,
+				18058EA86B0F9121304CA79E,
+				53BB0517BBDB499405E6D9AD,
+			);
+			name = stubs;
+			sourceTree = "<group>";
+		};
+		EB9F55120093875380E71983 = {
+			isa = PBXGroup;
+			children = (
+				52D2BCFCE294A8F641B399AC,
+				3CD3F2935EF8301EB8E4FDAC,
+				D57A6438BAEDEB7882ED9318,
+				4AD0590BAC6B61AFCDDAF493,
+				D5E3A7782723DFACF12EC23E,
+				A3750453CBDF54E3CBA8DCCA,
+				195FF805175628626354AD1A,
+				59651E3C8DE0A4CBED2A33B0,
+				D15AA055B9EC662EAE3BF937,
+				4C751C7CF7677404C238D74D,
+				46D15AAB1B34DB5609B53945,
+				E8801E403E7DC022E7100E99,
+				EF33B45D0CB3D40821F88DE4,
+				B8E76048DFED8CB79BF1A995,
+				E5822DABDEDF86DE7CD3A8FB,
+				670CA5C8A09F83A208653FAF,
+				E2CC90A98C81A7C53A2957BE,
+				B590BE4A9F4F57533B747B34,
+				7285E96F5D7BC87BF111825F,
+				C0520148344EFDAC8D6A0E7B,
+				5B319A46B00147DE390742C5,
+				F46E72CF186982ED0610BEFD,
+				1644363393C95657840F96E1,
+				C793994881185B3CD2D87D87,
+				ABBCEC76A2867189CAB232ED,
+				5E8EDDC5CB374D9007D94C7F,
+				154D2FFBC4BD8DAF9D057AE2,
+				ABEA3726B17DA7D4E0F3332C,
+				0DF24A1161DBEE01EFBD6404,
+				6ED3569B48E2201722E1E85B,
+				1F084FA53D7EB34D4CB4986D,
+				46695C34480D5EAFC2AF7BE7,
+				0619ADEA4BD189E6384E6215,
+				9E519DC089334FBD3CC85AB1,
+				2C2613E127346BFD602884A8,
+				0058C2B357E15E8F65401013,
+				135437656D9E413A6B3D14BA,
+				0DA1A95178C3E272F9C28ACB,
+			);
+			name = protobuf;
+			sourceTree = "<group>";
+		};
 		35745B99D62F293E97214F5E = {
 			isa = PBXGroup;
 			children = (
-				195C7FBD607DB6F4F5047161,
-				381ED54FD1284EE100180E64,
-				3798B1B28894495A17F5AAB4,
 				EA4890BC95DA3A23734735BA,
 				BA290197B9BE9B00B0A55C76,
 				38436F485824B705AE602777,
@@ -625,6 +1579,8 @@
 		84DBC470DD364FD6BF1EF2AE = {
 			isa = PBXGroup;
 			children = (
+				303C6748A3C8512EF491BC43,
+				EB9F55120093875380E71983,
 				35745B99D62F293E97214F5E,
 			);
 			name = "ap_3dmixer_client";
@@ -779,7 +1735,7 @@
 		B5DE266B917696FA72885A45 = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_LINK_OBJC_RUNTIME = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -793,6 +1749,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"_DEBUG=1",
 					"DEBUG=1",
+					"HAVE_PTHREAD",
 					"JUCER_XCODE_MAC_F6D2F4CF=1",
 					"JUCE_APP_VERSION=1.0.0",
 					"JUCE_APP_VERSION_HEX=0x10000",
@@ -871,7 +1828,8 @@
 					"/Users/silveryar/sdk/JUCE_old/modules/juce_audio_processors/format_types/VST3_SDK",
 					"../../JuceLibraryCode",
 					"/Users/silveryar/sdk/JUCE_old/modules",
-					"../external/protobuf/src",
+					"../../../external/protobuf/src",
+					"../../../messages",
 					"/Users/silveryar/sdk/JUCE_old/modules/juce_audio_plugin_client",
 					"$(inherited)",
 				);
@@ -892,7 +1850,7 @@
 		8542121807A06448C0AB156E = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_LINK_OBJC_RUNTIME = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -906,6 +1864,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"_NDEBUG=1",
 					"NDEBUG=1",
+					"HAVE_PTHREAD",
 					"JUCER_XCODE_MAC_F6D2F4CF=1",
 					"JUCE_APP_VERSION=1.0.0",
 					"JUCE_APP_VERSION_HEX=0x10000",
@@ -984,7 +1943,8 @@
 					"/Users/silveryar/sdk/JUCE_old/modules/juce_audio_processors/format_types/VST3_SDK",
 					"../../JuceLibraryCode",
 					"/Users/silveryar/sdk/JUCE_old/modules",
-					"../external/protobuf/src",
+					"../../../external/protobuf/src",
+					"../../../messages",
 					"/Users/silveryar/sdk/JUCE_old/modules/juce_audio_plugin_client",
 					"$(inherited)",
 				);
@@ -1006,7 +1966,7 @@
 		FC5A606927C4E4B7871BE894 = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_LINK_OBJC_RUNTIME = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1020,6 +1980,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"_DEBUG=1",
 					"DEBUG=1",
+					"HAVE_PTHREAD",
 					"JUCER_XCODE_MAC_F6D2F4CF=1",
 					"JUCE_APP_VERSION=1.0.0",
 					"JUCE_APP_VERSION_HEX=0x10000",
@@ -1098,7 +2059,8 @@
 					"/Users/silveryar/sdk/JUCE_old/modules/juce_audio_processors/format_types/VST3_SDK",
 					"../../JuceLibraryCode",
 					"/Users/silveryar/sdk/JUCE_old/modules",
-					"../external/protobuf/src",
+					"../../../external/protobuf/src",
+					"../../../messages",
 					"/Users/silveryar/sdk/JUCE_old/modules/juce_audio_plugin_client",
 					"$(inherited)",
 				);
@@ -1120,7 +2082,7 @@
 		74FB69B939150E87CA8C3B5F = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_LINK_OBJC_RUNTIME = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1134,6 +2096,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"_NDEBUG=1",
 					"NDEBUG=1",
+					"HAVE_PTHREAD",
 					"JUCER_XCODE_MAC_F6D2F4CF=1",
 					"JUCE_APP_VERSION=1.0.0",
 					"JUCE_APP_VERSION_HEX=0x10000",
@@ -1212,7 +2175,8 @@
 					"/Users/silveryar/sdk/JUCE_old/modules/juce_audio_processors/format_types/VST3_SDK",
 					"../../JuceLibraryCode",
 					"/Users/silveryar/sdk/JUCE_old/modules",
-					"../external/protobuf/src",
+					"../../../external/protobuf/src",
+					"../../../messages",
 					"/Users/silveryar/sdk/JUCE_old/modules/juce_audio_plugin_client",
 					"$(inherited)",
 				);
@@ -1235,7 +2199,7 @@
 		842062E74986062D66EF6314 = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_LINK_OBJC_RUNTIME = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1247,6 +2211,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"_DEBUG=1",
 					"DEBUG=1",
+					"HAVE_PTHREAD",
 					"JUCER_XCODE_MAC_F6D2F4CF=1",
 					"JUCE_APP_VERSION=1.0.0",
 					"JUCE_APP_VERSION_HEX=0x10000",
@@ -1324,7 +2289,8 @@
 					"/Users/silveryar/sdk/JUCE_old/modules/juce_audio_processors/format_types/VST3_SDK",
 					"../../JuceLibraryCode",
 					"/Users/silveryar/sdk/JUCE_old/modules",
-					"../external/protobuf/src",
+					"../../../external/protobuf/src",
+					"../../../messages",
 					"/Users/silveryar/sdk/JUCE_old/modules/juce_audio_plugin_client",
 					"$(inherited)",
 				);
@@ -1342,7 +2308,7 @@
 		2A5171AD4165C9C43504B55C = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_LINK_OBJC_RUNTIME = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1354,6 +2320,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"_NDEBUG=1",
 					"NDEBUG=1",
+					"HAVE_PTHREAD",
 					"JUCER_XCODE_MAC_F6D2F4CF=1",
 					"JUCE_APP_VERSION=1.0.0",
 					"JUCE_APP_VERSION_HEX=0x10000",
@@ -1431,7 +2398,8 @@
 					"/Users/silveryar/sdk/JUCE_old/modules/juce_audio_processors/format_types/VST3_SDK",
 					"../../JuceLibraryCode",
 					"/Users/silveryar/sdk/JUCE_old/modules",
-					"../external/protobuf/src",
+					"../../../external/protobuf/src",
+					"../../../messages",
 					"/Users/silveryar/sdk/JUCE_old/modules/juce_audio_plugin_client",
 					"$(inherited)",
 				);
@@ -1450,7 +2418,7 @@
 		1B29F9216DA0D9BB8541B895 = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_LINK_OBJC_RUNTIME = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1462,6 +2430,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"_DEBUG=1",
 					"DEBUG=1",
+					"HAVE_PTHREAD",
 					"JUCER_XCODE_MAC_F6D2F4CF=1",
 					"JUCE_APP_VERSION=1.0.0",
 					"JUCE_APP_VERSION_HEX=0x10000",
@@ -1540,7 +2509,8 @@
 					"/Users/silveryar/sdk/JUCE_old/modules/juce_audio_processors/format_types/VST3_SDK",
 					"../../JuceLibraryCode",
 					"/Users/silveryar/sdk/JUCE_old/modules",
-					"../external/protobuf/src",
+					"../../../external/protobuf/src",
+					"../../../messages",
 					"/Users/silveryar/sdk/JUCE_old/modules/juce_audio_plugin_client",
 					"$(inherited)",
 				);
@@ -1558,7 +2528,7 @@
 		DE7B8FE40F30B0789F4D10C5 = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_LINK_OBJC_RUNTIME = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1570,6 +2540,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"_NDEBUG=1",
 					"NDEBUG=1",
+					"HAVE_PTHREAD",
 					"JUCER_XCODE_MAC_F6D2F4CF=1",
 					"JUCE_APP_VERSION=1.0.0",
 					"JUCE_APP_VERSION_HEX=0x10000",
@@ -1648,7 +2619,8 @@
 					"/Users/silveryar/sdk/JUCE_old/modules/juce_audio_processors/format_types/VST3_SDK",
 					"../../JuceLibraryCode",
 					"/Users/silveryar/sdk/JUCE_old/modules",
-					"../external/protobuf/src",
+					"../../../external/protobuf/src",
+					"../../../messages",
 					"/Users/silveryar/sdk/JUCE_old/modules/juce_audio_plugin_client",
 					"$(inherited)",
 				);
@@ -1997,7 +2969,82 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC673FF558D4F6821B5D85BF,
+				7221E39EAFC0CD6C17914617,
+				EC356448A99ED2BAAB29C085,
+				CD1588252090DE9052DF28AC,
+				34C390B447444EFF4101AE01,
+				656C8E96FCC4354929AB583E,
+				40C5D003F43FD66D989FAB39,
+				4CF6465A03D4C2B1A9EC1B22,
+				DB89143432086B35FC58F1A0,
+				975EAFFB4895BE2DA23CCDBA,
+				F9DA54BDC1B880FA48327CE8,
+				F716C0EA0842C7EFA8386EF6,
+				E10932A3989F756E70F138F6,
+				28EB4694EE4C6C0DC66BD177,
+				75CE538FA028ABD248EE42CB,
+				E2376FBE4D303E606BD32A52,
+				95DDE15A2E7B6A1333D32273,
+				C3B1ADA1EFA02F62A366E056,
+				8ED3CA3FD5D1AAF8B2AB7446,
+				DDC23FF815F2F95A721225DA,
+				7C247AA46581FEF300BCCD34,
+				3A2E7633F35E52D28CA9A10C,
+				1379A711A5CD634CDE90BD42,
+				766C21218953BF30689F2F49,
+				B06CF15233582628B4B81E6C,
+				2E7895F0689D9A6EB07A2DDA,
+				09AC6919E9ADECE0D019BDFC,
+				87FAE6687C0584CD58F1B8ED,
+				0D882F389420A0AD43F05E55,
+				752DC3805169E32728FABB7C,
+				D1F24935F0DF0DC7FA1D772B,
+				0B29BAA2084C23967ABE98F1,
+				983FAB476EFF46F30EB4561F,
+				9F3CE5A69C65A53E1921C78A,
+				3A8A85FB19ECB24FE801B713,
+				CDBE035F441686DEDDA46645,
+				4D754B0F8C26BDE7544276A8,
+				ADD94CB8786B5D9F5BF731AF,
+				A7C7FB494F62F396D3E2F428,
+				3381AE33EEA6AA74B3E2BC80,
+				C5AA3F83062B7685BC0CFD95,
+				C9CDE3AF03B39AEE6E4686FC,
+				3DB2E06E5496919AF1497279,
+				E2416AEE36CF3CDE3E60F38A,
+				528CA2735D9BF91F52BE38F2,
+				CB050493B72804E574AFABF5,
+				D4D6C17AB3A6327FEEA8C5AD,
+				6BFA6880B4C4D5B162A4B86D,
+				38AC23F29D4C0BCA844DFAEB,
+				A1690E02C0D8139979A6ACB1,
+				D694A654D8BFA7AA8DAB6E6B,
+				7CBD17EC62BB7C36790D350E,
+				C0DBB9D417A28E3BEB920BF0,
+				63C62A9E3C96AC4CEFB68047,
+				34BE9D7182619C763507C55F,
+				2B5F0A44DEE13F8E76B4C44C,
+				B6422F947ED59E9D737FAE8B,
+				12819428B006BBFE4A33299D,
+				B1CFD5D8C55A509082407D43,
+				E770ACD14DD98AE90EFEFB29,
+				1532F96E4B1D49A53A97EE4C,
+				12BB5CE1DE0DFEBD8093FC6C,
+				870ABD65038BD9EAC84E1298,
+				7F4ADDFBB59D484C9E7772BC,
+				4ECA9288CE83DD6D231FD579,
+				D7788824ACC6B5F73FDEBD69,
+				312AA6CF06035D473F227676,
+				C16D10FD80A267430212BFAF,
+				A4CF3409673A6C811A8CFE0F,
+				1B4D38B43F4DF7ECEDA066FA,
+				1366132A04BDAF9FA25A48BD,
+				C99F31460505729A2EC2544B,
+				967D98EEB99EC006B5BD55C5,
+				53D79BDCA7B44667F3F2A32A,
+				F22D45EE360F4E2168B80525,
+				D704574EDDB2EF1D76569998,
+				3CBD73EB2222D1F417268F9F,
 				1A40E8737222EAAA46EAB196,
 				7E9C668FC0B1CB58BAFEFBFD,
 				3AF35B33353D66D89D0FE5AB,

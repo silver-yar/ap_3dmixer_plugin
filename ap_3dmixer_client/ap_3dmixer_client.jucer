@@ -2,15 +2,138 @@
 
 <JUCERPROJECT id="w7mKCg" name="ap_3dmixer_client" projectType="audioplug"
               useAppConfig="0" addUsingNamespaceToJuceHeader="0" displaySplashScreen="1"
-              jucerFormatVersion="1" headerPath="Users/silveryar/development/ap_3dmixer_plugin/external/protobuf/src"
-              cppLanguageStandard="17">
+              jucerFormatVersion="1" headerPath="../../../external/protobuf/src&#10;../../../messages"
+              cppLanguageStandard="17" defines="HAVE_PTHREAD">
   <MAINGROUP id="aJ1pxM" name="ap_3dmixer_client">
+    <GROUP id="{F0CE5E6B-2718-C088-ED4D-D862FEA50847}" name="messages">
+      <FILE id="TscsVk" name="parameters.pb.cc" compile="1" resource="0"
+            file="../messages/parameters.pb.cc"/>
+      <FILE id="ddB1wQ" name="parameters.pb.h" compile="0" resource="0" file="../messages/parameters.pb.h"/>
+      <FILE id="C1TwiP" name="parameters.proto" compile="0" resource="1"
+            file="../messages/parameters.proto"/>
+    </GROUP>
+    <GROUP id="{AFFF6BA3-0340-36E5-E174-63395E4BDBD6}" name="protobuf">
+      <FILE id="LenkZy" name="generated_enum_util.cc" compile="1" resource="0"
+            file="../external/protobuf/src/google/protobuf/generated_enum_util.cc"/>
+      <FILE id="lCBug8" name="generated_message_reflection.cc" compile="1"
+            resource="0" file="../external/protobuf/src/google/protobuf/generated_message_reflection.cc"/>
+      <FILE id="leqWT2" name="generated_message_table_driven_lite.cc" compile="1"
+            resource="0" file="../external/protobuf/src/google/protobuf/generated_message_table_driven_lite.cc"/>
+      <FILE id="PP7ZZw" name="generated_message_table_driven.cc" compile="1"
+            resource="0" file="../external/protobuf/src/google/protobuf/generated_message_table_driven.cc"/>
+      <FILE id="z9YPU3" name="generated_message_util.cc" compile="1" resource="0"
+            file="../external/protobuf/src/google/protobuf/generated_message_util.cc"/>
+      <FILE id="PH6LVJ" name="implicit_weak_message.cc" compile="1" resource="0"
+            file="../external/protobuf/src/google/protobuf/implicit_weak_message.cc"/>
+      <FILE id="tqa1cT" name="map_field.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/map_field.cc"/>
+      <FILE id="FJs79E" name="message_lite.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/message_lite.cc"/>
+      <FILE id="EWmFaR" name="message.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/message.cc"/>
+      <FILE id="G0GWFb" name="parse_context.cc" compile="1" resource="0"
+            file="../external/protobuf/src/google/protobuf/parse_context.cc"/>
+      <FILE id="Ptzlez" name="reflection_ops.cc" compile="1" resource="0"
+            file="../external/protobuf/src/google/protobuf/reflection_ops.cc"/>
+      <FILE id="I9EjJj" name="repeated_field.cc" compile="1" resource="0"
+            file="../external/protobuf/src/google/protobuf/repeated_field.cc"/>
+      <FILE id="TqYTth" name="service.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/service.cc"/>
+      <FILE id="utedXE" name="source_context.pb.cc" compile="1" resource="0"
+            file="../external/protobuf/src/google/protobuf/source_context.pb.cc"/>
+      <FILE id="qFaDDF" name="struct.pb.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/struct.pb.cc"/>
+      <FILE id="oRwaXs" name="text_format.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/text_format.cc"/>
+      <FILE id="ihVvjq" name="timestamp.pb.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/timestamp.pb.cc"/>
+      <FILE id="GsBxEc" name="type.pb.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/type.pb.cc"/>
+      <FILE id="GPJsRU" name="unknown_field_set.cc" compile="1" resource="0"
+            file="../external/protobuf/src/google/protobuf/unknown_field_set.cc"/>
+      <FILE id="spgIOO" name="wire_format_lite.cc" compile="1" resource="0"
+            file="../external/protobuf/src/google/protobuf/wire_format_lite.cc"/>
+      <FILE id="IjhZ1a" name="wire_format.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/wire_format.cc"/>
+      <FILE id="WLYPwt" name="wrappers.pb.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/wrappers.pb.cc"/>
+      <FILE id="SD1ZmC" name="any_lite.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/any_lite.cc"/>
+      <FILE id="PfvJRA" name="any.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/any.cc"/>
+      <FILE id="DyiKZq" name="any.pb.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/any.pb.cc"/>
+      <FILE id="lrgYQJ" name="api.pb.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/api.pb.cc"/>
+      <FILE id="T0p9CP" name="arena.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/arena.cc"/>
+      <FILE id="QnAq9T" name="descriptor_database.cc" compile="1" resource="0"
+            file="../external/protobuf/src/google/protobuf/descriptor_database.cc"/>
+      <FILE id="BiagLP" name="descriptor.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/descriptor.cc"/>
+      <FILE id="bAb3Y5" name="descriptor.pb.cc" compile="1" resource="0"
+            file="../external/protobuf/src/google/protobuf/descriptor.pb.cc"/>
+      <FILE id="GUu30A" name="duration.pb.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/duration.pb.cc"/>
+      <FILE id="yzjMTY" name="dynamic_message.cc" compile="1" resource="0"
+            file="../external/protobuf/src/google/protobuf/dynamic_message.cc"/>
+      <FILE id="zSbcR3" name="empty.pb.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/empty.pb.cc"/>
+      <FILE id="vyghnQ" name="extension_set_heavy.cc" compile="1" resource="0"
+            file="../external/protobuf/src/google/protobuf/extension_set_heavy.cc"/>
+      <FILE id="XG8QdW" name="extension_set.cc" compile="1" resource="0"
+            file="../external/protobuf/src/google/protobuf/extension_set.cc"/>
+      <GROUP id="{4A9D356E-9CBA-B221-EDC2-C6D735BA55B6}" name="util">
+        <GROUP id="{A85ED89C-C0A5-311D-7B78-8E594F953D68}" name="internal">
+          <FILE id="bS11xY" name="datapiece.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/util/internal/datapiece.cc"/>
+          <FILE id="HYMjoQ" name="default_value_objectwriter.cc" compile="1"
+                resource="0" file="../external/protobuf/src/google/protobuf/util/internal/default_value_objectwriter.cc"/>
+          <FILE id="CI6Xsc" name="error_listener.cc" compile="1" resource="0"
+                file="../external/protobuf/src/google/protobuf/util/internal/error_listener.cc"/>
+          <FILE id="k1Hf4S" name="field_mask_utility.cc" compile="1" resource="0"
+                file="../external/protobuf/src/google/protobuf/util/internal/field_mask_utility.cc"/>
+          <FILE id="MDnITS" name="json_escaping.cc" compile="1" resource="0"
+                file="../external/protobuf/src/google/protobuf/util/internal/json_escaping.cc"/>
+          <FILE id="pXcjJ6" name="json_objectwriter.cc" compile="1" resource="0"
+                file="../external/protobuf/src/google/protobuf/util/internal/json_objectwriter.cc"/>
+          <FILE id="VpTdPQ" name="json_stream_parser.cc" compile="1" resource="0"
+                file="../external/protobuf/src/google/protobuf/util/internal/json_stream_parser.cc"/>
+          <FILE id="q1byrT" name="object_writer.cc" compile="1" resource="0"
+                file="../external/protobuf/src/google/protobuf/util/internal/object_writer.cc"/>
+          <FILE id="Tvhtm7" name="proto_writer.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/util/internal/proto_writer.cc"/>
+          <FILE id="bAFSmB" name="protostream_objectsource.cc" compile="1" resource="0"
+                file="../external/protobuf/src/google/protobuf/util/internal/protostream_objectsource.cc"/>
+          <FILE id="nSmwAv" name="protostream_objectwriter.cc" compile="1" resource="0"
+                file="../external/protobuf/src/google/protobuf/util/internal/protostream_objectwriter.cc"/>
+          <FILE id="PZBTt3" name="type_info.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/util/internal/type_info.cc"/>
+          <FILE id="yJrdJm" name="utility.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/util/internal/utility.cc"/>
+        </GROUP>
+        <FILE id="L6kbfV" name="delimited_message_util.cc" compile="1" resource="0"
+              file="../external/protobuf/src/google/protobuf/util/delimited_message_util.cc"/>
+        <FILE id="ZRUgYa" name="field_comparator.cc" compile="1" resource="0"
+              file="../external/protobuf/src/google/protobuf/util/field_comparator.cc"/>
+        <FILE id="qS3bYc" name="field_mask_util.cc" compile="1" resource="0"
+              file="../external/protobuf/src/google/protobuf/util/field_mask_util.cc"/>
+        <FILE id="svBlca" name="json_util.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/util/json_util.cc"/>
+        <FILE id="llwUcG" name="message_differencer.cc" compile="1" resource="0"
+              file="../external/protobuf/src/google/protobuf/util/message_differencer.cc"/>
+        <FILE id="GOXlLM" name="time_util.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/util/time_util.cc"/>
+        <FILE id="Ybhwfr" name="type_resolver_util.cc" compile="1" resource="0"
+              file="../external/protobuf/src/google/protobuf/util/type_resolver_util.cc"/>
+      </GROUP>
+      <GROUP id="{F2B30FE7-3B9C-177B-400B-0D5F6B1FDDE0}" name="io">
+        <FILE id="IUETZF" name="coded_stream.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/io/coded_stream.cc"/>
+        <FILE id="zwxP1y" name="gzip_stream.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/io/gzip_stream.cc"/>
+        <FILE id="mc0pLI" name="io_win32.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/io/io_win32.cc"/>
+        <FILE id="renhAF" name="printer.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/io/printer.cc"/>
+        <FILE id="VLhNxd" name="strtod.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/io/strtod.cc"/>
+        <FILE id="qE4Ba1" name="tokenizer.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/io/tokenizer.cc"/>
+        <FILE id="l2k3eP" name="zero_copy_stream.cc" compile="1" resource="0"
+              file="../external/protobuf/src/google/protobuf/io/zero_copy_stream.cc"/>
+        <FILE id="LKlKC5" name="zero_copy_stream_impl.cc" compile="1" resource="0"
+              file="../external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.cc"/>
+        <FILE id="qwGbBd" name="zero_copy_stream_impl_lite.cc" compile="1"
+              resource="0" file="../external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.cc"/>
+      </GROUP>
+      <GROUP id="{54D27CD4-CE20-4D36-DC4E-A57914657D58}" name="stubs">
+        <FILE id="sUJC69" name="bytestream.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/stubs/bytestream.cc"/>
+        <FILE id="MUgdwt" name="common.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/stubs/common.cc"/>
+        <FILE id="stUIic" name="int128.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/stubs/int128.cc"/>
+        <FILE id="JW050N" name="status.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/stubs/status.cc"/>
+        <FILE id="HhfYtW" name="statusor.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/stubs/statusor.cc"/>
+        <FILE id="lfZqsi" name="stringprintf.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/stubs/stringprintf.cc"/>
+        <FILE id="D04L9t" name="structurally_valid.cc" compile="1" resource="0"
+              file="../external/protobuf/src/google/protobuf/stubs/structurally_valid.cc"/>
+        <FILE id="a7KXIv" name="strutil.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/stubs/strutil.cc"/>
+        <FILE id="kMJBzA" name="substitute.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/stubs/substitute.cc"/>
+        <FILE id="uG0LdE" name="time.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/stubs/time.cc"/>
+        <FILE id="sBCqxL" name="stringpiece.cc" compile="1" resource="0" file="../external/protobuf/src/google/protobuf/stubs/stringpiece.cc"/>
+        <FILE id="DxRSAB" name="stringpiece.h" compile="0" resource="0" file="../external/protobuf/src/google/protobuf/stubs/stringpiece.h"/>
+      </GROUP>
+    </GROUP>
     <GROUP id="{744D627B-6D9A-349F-B2A6-C1AEC800DE12}" name="Source">
-      <FILE id="wfKr1D" name="parameters.proto" compile="0" resource="0"
-            file="Source/parameters.proto"/>
-      <FILE id="ln13qj" name="parameters.pb.cc" compile="1" resource="0"
-            file="Source/parameters.pb.cc"/>
-      <FILE id="CWbtA3" name="parameters.pb.h" compile="0" resource="0" file="Source/parameters.pb.h"/>
       <FILE id="rxPUBE" name="APInterprocessConnection.cpp" compile="1" resource="0"
             file="Source/APInterprocessConnection.cpp"/>
       <FILE id="ZT5xzJ" name="APInterprocessConnection.h" compile="0" resource="0"
