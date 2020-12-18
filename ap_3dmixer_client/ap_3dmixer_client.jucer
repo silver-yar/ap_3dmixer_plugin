@@ -165,8 +165,7 @@
         <MODULEPATH id="juce_gui_extra" path="../../sdk/JUCE_old/modules"/>
       </MODULEPATHS>
     </CLION>
-    <XCODE_MAC targetFolder="Builds/MacOSX" extraCompilerFlags="-I/Users/silveryar/development/ap_3dmixer_plugin/external/protobuf/src"
-               extraLinkerFlags="-L/Users/silveryar/development/ap_3dmixer_plugin/external/protobuf/src&#10;">
+    <XCODE_MAC targetFolder="Builds/MacOSX" extraLinkerFlags="&#10;">
       <CONFIGURATIONS>
         <CONFIGURATION isDebug="1" name="Debug" targetName="ap_3dmixer_client"/>
         <CONFIGURATION isDebug="0" name="Release" targetName="ap_3dmixer_client"/>

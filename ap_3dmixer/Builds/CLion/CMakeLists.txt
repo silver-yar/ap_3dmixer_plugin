@@ -3268,7 +3268,6 @@ target_compile_definitions (VST3 PRIVATE
 
 target_compile_options (VST3 PRIVATE
     -mmacosx-version-min=10.11
-    -I/Users/silveryar/development/ap_3dmixer_plugin/external/protobuf/src
     -O0
     -stdlib=libc++
 )
@@ -3304,7 +3303,6 @@ set_target_properties (VST3 PROPERTIES
 
 target_link_libraries (VST3 PRIVATE
     SHARED_CODE
-    "-L/Users/silveryar/development/ap_3dmixer_plugin/external/protobuf/src"
     "-framework Accelerate"
     "-framework AudioToolbox"
     "-framework Carbon"
@@ -3414,7 +3412,6 @@ target_compile_definitions (AU PRIVATE
 
 target_compile_options (AU PRIVATE
     -mmacosx-version-min=10.11
-    -I/Users/silveryar/development/ap_3dmixer_plugin/external/protobuf/src
     -O0
     -stdlib=libc++
 )
@@ -3478,7 +3475,6 @@ set_target_properties (AU PROPERTIES
 
 target_link_libraries (AU PRIVATE
     SHARED_CODE
-    "-L/Users/silveryar/development/ap_3dmixer_plugin/external/protobuf/src"
     "-framework AudioUnit"
     "-framework Accelerate"
     "-framework AudioToolbox"
@@ -3589,7 +3585,6 @@ target_compile_definitions (STANDALONE_PLUGIN PRIVATE
 
 target_compile_options (STANDALONE_PLUGIN PRIVATE
     -mmacosx-version-min=10.11
-    -I/Users/silveryar/development/ap_3dmixer_plugin/external/protobuf/src
     -O0
     -stdlib=libc++
 )
@@ -3617,7 +3612,6 @@ set_target_properties (STANDALONE_PLUGIN PROPERTIES
 
 target_link_libraries (STANDALONE_PLUGIN PRIVATE
     SHARED_CODE
-    "-L/Users/silveryar/development/ap_3dmixer_plugin/external/protobuf/src"
     "-framework Accelerate"
     "-framework AudioToolbox"
     "-framework Carbon"
@@ -3722,7 +3716,6 @@ target_compile_definitions (SHARED_CODE PRIVATE
 
 target_compile_options (SHARED_CODE PRIVATE
     -mmacosx-version-min=10.11
-    -I/Users/silveryar/development/ap_3dmixer_plugin/external/protobuf/src
     -O0
     -stdlib=libc++
 )
@@ -3746,7 +3739,6 @@ set_target_properties (SHARED_CODE PROPERTIES
 )
 
 target_link_libraries (SHARED_CODE PRIVATE
-    "-L/Users/silveryar/development/ap_3dmixer_plugin/external/protobuf/src"
     "-framework Accelerate"
     "-framework AudioToolbox"
     "-framework Carbon"
@@ -3863,7 +3855,6 @@ target_compile_definitions (VST3 PRIVATE
 
 target_compile_options (VST3 PRIVATE
     -mmacosx-version-min=10.11
-    -I/Users/silveryar/development/ap_3dmixer_plugin/external/protobuf/src
     -O3
     -flto
     -stdlib=libc++
@@ -3900,7 +3891,6 @@ set_target_properties (VST3 PROPERTIES
 
 target_link_libraries (VST3 PRIVATE
     SHARED_CODE
-    "-L/Users/silveryar/development/ap_3dmixer_plugin/external/protobuf/src"
     "-framework Accelerate"
     "-framework AudioToolbox"
     "-framework Carbon"
@@ -4010,7 +4000,6 @@ target_compile_definitions (AU PRIVATE
 
 target_compile_options (AU PRIVATE
     -mmacosx-version-min=10.11
-    -I/Users/silveryar/development/ap_3dmixer_plugin/external/protobuf/src
     -O3
     -flto
     -stdlib=libc++
@@ -4075,7 +4064,6 @@ set_target_properties (AU PROPERTIES
 
 target_link_libraries (AU PRIVATE
     SHARED_CODE
-    "-L/Users/silveryar/development/ap_3dmixer_plugin/external/protobuf/src"
     "-framework AudioUnit"
     "-framework Accelerate"
     "-framework AudioToolbox"
@@ -4186,7 +4174,6 @@ target_compile_definitions (STANDALONE_PLUGIN PRIVATE
 
 target_compile_options (STANDALONE_PLUGIN PRIVATE
     -mmacosx-version-min=10.11
-    -I/Users/silveryar/development/ap_3dmixer_plugin/external/protobuf/src
     -O3
     -flto
     -stdlib=libc++
@@ -4215,7 +4202,6 @@ set_target_properties (STANDALONE_PLUGIN PROPERTIES
 
 target_link_libraries (STANDALONE_PLUGIN PRIVATE
     SHARED_CODE
-    "-L/Users/silveryar/development/ap_3dmixer_plugin/external/protobuf/src"
     "-framework Accelerate"
     "-framework AudioToolbox"
     "-framework Carbon"
@@ -4320,7 +4306,6 @@ target_compile_definitions (SHARED_CODE PRIVATE
 
 target_compile_options (SHARED_CODE PRIVATE
     -mmacosx-version-min=10.11
-    -I/Users/silveryar/development/ap_3dmixer_plugin/external/protobuf/src
     -O3
     -flto
     -stdlib=libc++
@@ -4345,7 +4330,6 @@ set_target_properties (SHARED_CODE PROPERTIES
 )
 
 target_link_libraries (SHARED_CODE PRIVATE
-    "-L/Users/silveryar/development/ap_3dmixer_plugin/external/protobuf/src"
     "-framework Accelerate"
     "-framework AudioToolbox"
     "-framework Carbon"
