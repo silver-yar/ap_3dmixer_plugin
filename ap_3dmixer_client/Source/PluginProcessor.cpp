@@ -261,23 +261,18 @@ void Ap_3dmixer_clientAudioProcessor::valueTreePropertyChanged (juce::ValueTree&
     aproto::Parameter* lpf = parameters.mutable_parameter1();
     lpf->set_name("LPF");
     lpf->set_value(apvts.getRawParameterValue("LPF") -> load());
-//    DBG(apvts.getRawParameterValue("LPF")->load());
     
     aproto::Parameter* volume = parameters.mutable_parameter2();
     volume->set_name("VOL");
     volume->set_value(apvts.getRawParameterValue("VOL") -> load());
-//    DBG(parameters.parameters_size());
+
     std::string output;
-//    char* data;
-//    parameters.SerializeToArray(data, sizeof(data));
     parameters.SerializeToString(&output);
     juce::MemoryBlock message (output.data(), output.size());
-//    juce::MemoryBlock message (data, sizeof(data));
 
     aproto::Parameters converted;
     std::string s(message.begin(), message.getSize());
     converted.ParseFromString(s);
-//    converted.ParseFromString(message.toString().toStdString());
 
 //    connection_->sendMessage(message);
 };
