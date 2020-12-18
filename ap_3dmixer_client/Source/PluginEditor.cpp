@@ -15,11 +15,22 @@
 Ap_3dmixer_clientAudioProcessorEditor::Ap_3dmixer_clientAudioProcessorEditor (Ap_3dmixer_clientAudioProcessor& p)
     : AudioProcessorEditor (&p), audioProcessor (p)
 {
-    // Test Socket Connection Code
-    connection_ = std::make_unique<Ap_InterprocessConnection>();
-    connection_->connectToSocket ("127.0.0.1", 3450, 500);
-    juce::String message("Hello, Audio Pirate.");
-    connection_->sendMessage (juce::MemoryBlock (message.toUTF8(), message.length()));
+//    GOOGLE_PROTOBUF_VERIFY_VERSION;
+//    Test Socket Connection Code
+//    connection_ = std::make_unique<Ap_InterprocessConnection>();
+//    connection_->connectToSocket ("127.0.0.1", 3450, 500);
+//    juce::String message("Hello, Audio Pirate.");
+//    connection_->sendMessage (juce::MemoryBlock (message.toUTF8(), message.length()));
+
+    // Gain Slider Setup
+    lpfSlider_ = std::make_unique<juce::Slider> (juce::Slider::SliderStyle::LinearBarVertical, juce::Slider::TextBoxBelow);
+    addAndMakeVisible (lpfSlider_.get());
+    lpfLabel_ = std::make_unique<juce::Label> ("", "LPF");
+    addAndMakeVisible (lpfLabel_.get());
+    lpfLabel_->attachToComponent (lpfSlider_.get(), false);
+    lpfLabel_->setJustificationType (juce::Justification::centred);
+    lpfAttachment_ = std::make_unique<juce::AudioProcessorValueTreeState::SliderAttachment> (
+            audioProcessor.apvts, "LPF", *lpfSlider_);
 
     // Gain Slider Setup
     gainSlider_ = std::make_unique<juce::Slider> (juce::Slider::SliderStyle::LinearBarVertical, juce::Slider::TextBoxBelow);
@@ -58,28 +69,23 @@ void Ap_3dmixer_clientAudioProcessorEditor::resized()
 {
     auto bounds = getLocalBounds();
     bounds.removeFromTop((float) getHeight() * 0.2f);
+    auto left = bounds.removeFromLeft((float) getWidth() * 0.5f);
 
+    lpfSlider_->setBounds(left);
     gainSlider_->setBounds(bounds);
 }
 
 void Ap_3dmixer_clientAudioProcessorEditor::timerCallback()
 {
-    float currVal = audioProcessor.apvts.getRawParameterValue("VOL") -> load();
-    DBG("currVal: " + juce::String(currVal));
-    auto currVal64 = juce::Base64::toBase64(&currVal, sizeof(currVal));
-    DBG("currVal64: " + currVal64);
-
-    connection_->sendMessage (juce::MemoryBlock (currVal64.toUTF8(), sizeof(currVal64.toUTF8())));
-
-//    juce::MemoryOutputStream outputStream;
-//    auto isBase64 = juce::Base64::convertFromBase64(outputStream, currVal64);
-//    // jassert(isBase64);
-//    const void* data = outputStream.getData();
-//    const float* convertedVal = static_cast<const float*>(data);
-//    if (isBase64) {
-//        DBG("Converted: " + juce::String(*convertedVal));
-//    } else {
-//        DBG("didn't work!");
-//    }
-//    connection_->sendMessage (juce::MemoryBlock (currVal64.toUTF8(), currVal64.length()));
+//    aproto::Parameters parameters;
+//    aproto::Parameter* parameter = parameters.add_parameters();
+//    parameter->set_name("VOL");
+//    float currVal = audioProcessor.apvts.getRawParameterValue("VOL") -> load();
+//    parameter->set_value(currVal);
+//
+//    std::string output;
+//    parameter->SerializeToString(&output);
+//    juce::MemoryBlock message (output.data(), output.size());
+//
+//    connection_->sendMessage(message);
 }

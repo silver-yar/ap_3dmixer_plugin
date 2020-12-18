@@ -338,25 +338,44 @@ class Parameters PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kParametersFieldNumber = 1,
+    kParameter1FieldNumber = 1,
+    kParameter2FieldNumber = 2,
   };
-  // repeated .aproto.Parameter parameters = 1;
-  int parameters_size() const;
+  // .aproto.Parameter parameter1 = 1;
+  bool has_parameter1() const;
   private:
-  int _internal_parameters_size() const;
+  bool _internal_has_parameter1() const;
   public:
-  void clear_parameters();
-  ::aproto::Parameter* mutable_parameters(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::aproto::Parameter >*
-      mutable_parameters();
+  void clear_parameter1();
+  const ::aproto::Parameter& parameter1() const;
+  ::aproto::Parameter* release_parameter1();
+  ::aproto::Parameter* mutable_parameter1();
+  void set_allocated_parameter1(::aproto::Parameter* parameter1);
   private:
-  const ::aproto::Parameter& _internal_parameters(int index) const;
-  ::aproto::Parameter* _internal_add_parameters();
+  const ::aproto::Parameter& _internal_parameter1() const;
+  ::aproto::Parameter* _internal_mutable_parameter1();
   public:
-  const ::aproto::Parameter& parameters(int index) const;
-  ::aproto::Parameter* add_parameters();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::aproto::Parameter >&
-      parameters() const;
+  void unsafe_arena_set_allocated_parameter1(
+      ::aproto::Parameter* parameter1);
+  ::aproto::Parameter* unsafe_arena_release_parameter1();
+
+  // .aproto.Parameter parameter2 = 2;
+  bool has_parameter2() const;
+  private:
+  bool _internal_has_parameter2() const;
+  public:
+  void clear_parameter2();
+  const ::aproto::Parameter& parameter2() const;
+  ::aproto::Parameter* release_parameter2();
+  ::aproto::Parameter* mutable_parameter2();
+  void set_allocated_parameter2(::aproto::Parameter* parameter2);
+  private:
+  const ::aproto::Parameter& _internal_parameter2() const;
+  ::aproto::Parameter* _internal_mutable_parameter2();
+  public:
+  void unsafe_arena_set_allocated_parameter2(
+      ::aproto::Parameter* parameter2);
+  ::aproto::Parameter* unsafe_arena_release_parameter2();
 
   // @@protoc_insertion_point(class_scope:aproto.Parameters)
  private:
@@ -365,7 +384,8 @@ class Parameters PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::aproto::Parameter > parameters_;
+  ::aproto::Parameter* parameter1_;
+  ::aproto::Parameter* parameter2_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_parameters_2eproto;
 };
@@ -466,43 +486,170 @@ inline void Parameter::set_value(float value) {
 
 // Parameters
 
-// repeated .aproto.Parameter parameters = 1;
-inline int Parameters::_internal_parameters_size() const {
-  return parameters_.size();
+// .aproto.Parameter parameter1 = 1;
+inline bool Parameters::_internal_has_parameter1() const {
+  return this != internal_default_instance() && parameter1_ != nullptr;
 }
-inline int Parameters::parameters_size() const {
-  return _internal_parameters_size();
+inline bool Parameters::has_parameter1() const {
+  return _internal_has_parameter1();
 }
-inline void Parameters::clear_parameters() {
-  parameters_.Clear();
+inline void Parameters::clear_parameter1() {
+  if (GetArena() == nullptr && parameter1_ != nullptr) {
+    delete parameter1_;
+  }
+  parameter1_ = nullptr;
 }
-inline ::aproto::Parameter* Parameters::mutable_parameters(int index) {
-  // @@protoc_insertion_point(field_mutable:aproto.Parameters.parameters)
-  return parameters_.Mutable(index);
+inline const ::aproto::Parameter& Parameters::_internal_parameter1() const {
+  const ::aproto::Parameter* p = parameter1_;
+  return p != nullptr ? *p : *reinterpret_cast<const ::aproto::Parameter*>(
+      &::aproto::_Parameter_default_instance_);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::aproto::Parameter >*
-Parameters::mutable_parameters() {
-  // @@protoc_insertion_point(field_mutable_list:aproto.Parameters.parameters)
-  return &parameters_;
+inline const ::aproto::Parameter& Parameters::parameter1() const {
+  // @@protoc_insertion_point(field_get:aproto.Parameters.parameter1)
+  return _internal_parameter1();
 }
-inline const ::aproto::Parameter& Parameters::_internal_parameters(int index) const {
-  return parameters_.Get(index);
+inline void Parameters::unsafe_arena_set_allocated_parameter1(
+    ::aproto::Parameter* parameter1) {
+  if (GetArena() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(parameter1_);
+  }
+  parameter1_ = parameter1;
+  if (parameter1) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:aproto.Parameters.parameter1)
 }
-inline const ::aproto::Parameter& Parameters::parameters(int index) const {
-  // @@protoc_insertion_point(field_get:aproto.Parameters.parameters)
-  return _internal_parameters(index);
+inline ::aproto::Parameter* Parameters::release_parameter1() {
+  
+  ::aproto::Parameter* temp = parameter1_;
+  parameter1_ = nullptr;
+  if (GetArena() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+  return temp;
 }
-inline ::aproto::Parameter* Parameters::_internal_add_parameters() {
-  return parameters_.Add();
+inline ::aproto::Parameter* Parameters::unsafe_arena_release_parameter1() {
+  // @@protoc_insertion_point(field_release:aproto.Parameters.parameter1)
+  
+  ::aproto::Parameter* temp = parameter1_;
+  parameter1_ = nullptr;
+  return temp;
 }
-inline ::aproto::Parameter* Parameters::add_parameters() {
-  // @@protoc_insertion_point(field_add:aproto.Parameters.parameters)
-  return _internal_add_parameters();
+inline ::aproto::Parameter* Parameters::_internal_mutable_parameter1() {
+  
+  if (parameter1_ == nullptr) {
+    auto* p = CreateMaybeMessage<::aproto::Parameter>(GetArena());
+    parameter1_ = p;
+  }
+  return parameter1_;
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::aproto::Parameter >&
-Parameters::parameters() const {
-  // @@protoc_insertion_point(field_list:aproto.Parameters.parameters)
-  return parameters_;
+inline ::aproto::Parameter* Parameters::mutable_parameter1() {
+  // @@protoc_insertion_point(field_mutable:aproto.Parameters.parameter1)
+  return _internal_mutable_parameter1();
+}
+inline void Parameters::set_allocated_parameter1(::aproto::Parameter* parameter1) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  if (message_arena == nullptr) {
+    delete parameter1_;
+  }
+  if (parameter1) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(parameter1);
+    if (message_arena != submessage_arena) {
+      parameter1 = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, parameter1, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  parameter1_ = parameter1;
+  // @@protoc_insertion_point(field_set_allocated:aproto.Parameters.parameter1)
+}
+
+// .aproto.Parameter parameter2 = 2;
+inline bool Parameters::_internal_has_parameter2() const {
+  return this != internal_default_instance() && parameter2_ != nullptr;
+}
+inline bool Parameters::has_parameter2() const {
+  return _internal_has_parameter2();
+}
+inline void Parameters::clear_parameter2() {
+  if (GetArena() == nullptr && parameter2_ != nullptr) {
+    delete parameter2_;
+  }
+  parameter2_ = nullptr;
+}
+inline const ::aproto::Parameter& Parameters::_internal_parameter2() const {
+  const ::aproto::Parameter* p = parameter2_;
+  return p != nullptr ? *p : *reinterpret_cast<const ::aproto::Parameter*>(
+      &::aproto::_Parameter_default_instance_);
+}
+inline const ::aproto::Parameter& Parameters::parameter2() const {
+  // @@protoc_insertion_point(field_get:aproto.Parameters.parameter2)
+  return _internal_parameter2();
+}
+inline void Parameters::unsafe_arena_set_allocated_parameter2(
+    ::aproto::Parameter* parameter2) {
+  if (GetArena() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(parameter2_);
+  }
+  parameter2_ = parameter2;
+  if (parameter2) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:aproto.Parameters.parameter2)
+}
+inline ::aproto::Parameter* Parameters::release_parameter2() {
+  
+  ::aproto::Parameter* temp = parameter2_;
+  parameter2_ = nullptr;
+  if (GetArena() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+  return temp;
+}
+inline ::aproto::Parameter* Parameters::unsafe_arena_release_parameter2() {
+  // @@protoc_insertion_point(field_release:aproto.Parameters.parameter2)
+  
+  ::aproto::Parameter* temp = parameter2_;
+  parameter2_ = nullptr;
+  return temp;
+}
+inline ::aproto::Parameter* Parameters::_internal_mutable_parameter2() {
+  
+  if (parameter2_ == nullptr) {
+    auto* p = CreateMaybeMessage<::aproto::Parameter>(GetArena());
+    parameter2_ = p;
+  }
+  return parameter2_;
+}
+inline ::aproto::Parameter* Parameters::mutable_parameter2() {
+  // @@protoc_insertion_point(field_mutable:aproto.Parameters.parameter2)
+  return _internal_mutable_parameter2();
+}
+inline void Parameters::set_allocated_parameter2(::aproto::Parameter* parameter2) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  if (message_arena == nullptr) {
+    delete parameter2_;
+  }
+  if (parameter2) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(parameter2);
+    if (message_arena != submessage_arena) {
+      parameter2 = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, parameter2, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  parameter2_ = parameter2;
+  // @@protoc_insertion_point(field_set_allocated:aproto.Parameters.parameter2)
 }
 
 #ifdef __GNUC__

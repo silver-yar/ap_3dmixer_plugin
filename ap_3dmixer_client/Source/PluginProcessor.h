@@ -9,6 +9,8 @@
 #pragma once
 
 #include <JuceHeader.h>
+#include "APInterprocessConnection.h"
+#include "parameters.pb.h"
 
 //==============================================================================
 /**
@@ -74,13 +76,15 @@ private:
     bool isActive_ { false };
     bool mustUpdateProcessing_ { false };
     juce::LinearSmoothedValue<float> gain_ [2] { 0.0f };
+    juce::IIRFilter iirFilter_ [2];
+
+    std::unique_ptr<Ap_InterprocessConnection> connection_;
 
     //==Private Methods=============================================================
     // Callback for DSP parameter changes
-    void valueTreePropertyChanged (juce::ValueTree& treeWhosePropertyChanged, const juce::Identifier& property) override
-    {
-        mustUpdateProcessing_ = true;
-    };
+    void valueTreePropertyChanged (juce::ValueTree& treeWhosePropertyChanged,
+                                   const juce::Identifier& property) override;
+
 
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (Ap_3dmixer_clientAudioProcessor)

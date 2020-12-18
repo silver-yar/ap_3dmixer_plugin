@@ -23,6 +23,7 @@ Ap_3dmixer_clientAudioProcessor::Ap_3dmixer_clientAudioProcessor()
                        ), apvts (*this, nullptr, "Parameters", createParameters())
 #endif
 {
+    GOOGLE_PROTOBUF_VERIFY_VERSION;
     apvts.state.addListener (this);
     init();
 }
@@ -149,6 +150,7 @@ void Ap_3dmixer_clientAudioProcessor::processBlock (juce::AudioBuffer<float>& bu
     for (int channel = 0; channel < totalNumInputChannels; ++channel)
     {
         auto* channelData = buffer.getWritePointer (channel);
+        iirFilter_[channel].processSamples (channelData, numSamples);
         gain_[channel].applyGain (channelData, numSamples);
 
         // Iterate over each sample in the buffer
@@ -188,7 +190,9 @@ void Ap_3dmixer_clientAudioProcessor::setStateInformation (const void* data, int
 }
 
 void Ap_3dmixer_clientAudioProcessor::init() {
-
+    // Test Socket Connection Code
+    connection_ = std::make_unique<Ap_InterprocessConnection>();
+    connection_->connectToSocket ("127.0.0.1", 3450, 500);
 }
 
 void Ap_3dmixer_clientAudioProcessor::prepare(double sampleRate, int samplesPerBlock) {
@@ -199,14 +203,18 @@ void Ap_3dmixer_clientAudioProcessor::update() {
     mustUpdateProcessing_ = false;
 
     auto volume = apvts.getRawParameterValue ("VOL");
+    auto frequency = apvts.getRawParameterValue ("LPF");
 
     for (int channel = 0; channel < 2; ++channel) {
+        iirFilter_[channel].setCoefficients (juce::IIRCoefficients::makeLowPass (
+                getSampleRate(), frequency->load()));
         gain_[channel].setTargetValue(juce::Decibels::decibelsToGain(volume->load()));
     }
 }
 
 void Ap_3dmixer_clientAudioProcessor::reset() {
     for (int channel = 0; channel < 2; ++channel) {
+        iirFilter_[channel].reset();
         gain_[channel].reset(getSampleRate(), 0.050);
     }
 }
@@ -217,6 +225,18 @@ juce::AudioProcessorValueTreeState::ParameterLayout Ap_3dmixer_clientAudioProces
 
     auto valueToTextFunction = [](float val, int len) { return juce::String(val, len); };
     auto textToValueFunction = [](const juce::String& text) { return text.getFloatValue(); };
+
+    // **Low Pass Filter Parameter** - in Hz
+    parameters.emplace_back (std::make_unique<juce::AudioParameterFloat>(
+            "LPF",
+            "Low Pass Filter",
+            juce::NormalisableRange<float>(20.0f, 20000.0f, 10.0f, 0.2f),
+            800.0f,
+            "Hz",
+            juce::AudioProcessorParameter::genericParameter,
+            valueToTextFunction,
+            textToValueFunction
+    ));
 
     // **Gain Parameter** - in dB
     parameters.emplace_back (std::make_unique<juce::AudioParameterFloat>(
@@ -232,6 +252,35 @@ juce::AudioProcessorValueTreeState::ParameterLayout Ap_3dmixer_clientAudioProces
 
     return { parameters.begin(), parameters.end() };
 }
+
+void Ap_3dmixer_clientAudioProcessor::valueTreePropertyChanged (juce::ValueTree& treeWhosePropertyChanged, const juce::Identifier& property)
+{
+    mustUpdateProcessing_ = true;
+    aproto::Parameters parameters;
+
+    aproto::Parameter* lpf = parameters.mutable_parameter1();
+    lpf->set_name("LPF");
+    lpf->set_value(apvts.getRawParameterValue("LPF") -> load());
+//    DBG(apvts.getRawParameterValue("LPF")->load());
+    
+    aproto::Parameter* volume = parameters.mutable_parameter2();
+    volume->set_name("VOL");
+    volume->set_value(apvts.getRawParameterValue("VOL") -> load());
+//    DBG(parameters.parameters_size());
+    std::string output;
+//    char* data;
+//    parameters.SerializeToArray(data, sizeof(data));
+    parameters.SerializeToString(&output);
+    juce::MemoryBlock message (output.data(), output.size());
+//    juce::MemoryBlock message (data, sizeof(data));
+
+    aproto::Parameters converted;
+    std::string s(message.begin(), message.getSize());
+    converted.ParseFromString(s);
+//    converted.ParseFromString(message.toString().toStdString());
+
+//    connection_->sendMessage(message);
+};
 
 //==============================================================================
 // This creates new instances of the plugin..

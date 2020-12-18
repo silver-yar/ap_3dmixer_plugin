@@ -31,10 +31,10 @@ public:
 private:
     Ap_3dmixer_clientAudioProcessor& audioProcessor;
 
-    std::unique_ptr<Ap_InterprocessConnection> connection_;
-    std::unique_ptr<juce::Slider> gainSlider_;
-    std::unique_ptr<juce::Label> gainLabel_;
-    std::unique_ptr<juce::AudioProcessorValueTreeState::SliderAttachment> gainAttachment_;
+    std::unique_ptr<juce::Slider> lpfSlider_, gainSlider_;
+    std::unique_ptr<juce::Label> lpfLabel_, gainLabel_;
+    std::unique_ptr<juce::AudioProcessorValueTreeState::SliderAttachment> lpfAttachment_,
+    gainAttachment_;
 
     float preVal_ = 0;
 
